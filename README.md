@@ -2,6 +2,8 @@
 
 Our small team maintains a variety of utilities to empower English-speaking players of the MMORPG Dragon Quest X (DQX).
 
+For help, the team hangs out in the [DQX Worldwide Discord](discord.gg/dragonquestx). Post your questions in **#clarity-questions**.
+
 ## dqxclarity <a href="https://github.com/dqx-translation-project/dqxclarity"><img src="asset/github-mark.png" alt="github-mark" width="17"></a>
 
 dqxclarity is a Python program that enables the game to display in English. It uses both a live translation service and modded game file to render English in the game client.
