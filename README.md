@@ -31,3 +31,9 @@ An autohotkey program that renders an overlay over the game using a live transla
 **It does not receive updates regularly and is not actively supported. Use at your own risk.**
 
 **[Installation and FAQ]({% link ahkmon.md %})**
+
+## dqx troubleshooting and faq
+
+An unordered list of issues that have been seen either during installation or while playing.
+
+**[Browse]({% link dqx_troubleshooting.md %})**
