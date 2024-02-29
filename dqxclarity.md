@@ -1,4 +1,4 @@
-[tt1]: ## "An API key is effectively a password used to authorize yourself against a service (like DeepL or Google Translate). This key is provided to you after setting up an account with either service and should be **treated as sensitive**. Anyone with this key has the equivalent of your username and password to another website."
+[tt1]: ## "An API key is effectively a password used to authenticate yourself against a service (like DeepL or Google Translate). This key is provided to you after setting up an account with either service and should be **treated as sensitive**. Anyone with this key has the equivalent of your username and password to another website."
 
 # dqxclarity
 
