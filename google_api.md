@@ -3,11 +3,12 @@ This will cover all the steps required to get set up with Google's Cloud Transla
 ## Requirements
 
 - A valid credit card
-    - This service costs nothing for the first 500,000 characters per month, but if you go over this limit, it will start to cost. 500,000 characters is a lot and unless you're spending 10+ hours a day doing only story content, you are more than fine with this limit. Pricing for this service can be found [here](https://cloud.google.com/translate/pricing) if you're interested. `dqxclarity` uses the "Cloud Translation - Basic" services.
+
+  > This service costs nothing for the first 500,000 characters per month, but if you go over this limit, it will start to cost. 500,000 characters is a lot and unless you're spending 10+ hours a day doing only story content, you are more than fine with this limit. Pricing for this service can be found [here](https://cloud.google.com/translate/pricing) if you're interested. dqxclarity uses the "Cloud Translation - Basic" services.
 
 ## Creating your Google project
 
-- Navigate to https://console.cloud.google.com/
+- Navigate to the [Google Cloud Console](https://console.cloud.google.com)
 - If you aren't logged in to a Google account, you will be prompted to log in
 - In the top menu, click "Select a project"
 
@@ -61,7 +62,7 @@ This will cover all the steps required to get set up with Google's Cloud Transla
 - You are probably concerned with actually being billed by using this. You can set up billing alerts to let you know when things happen within your billing account (like when you're going to be charged)
 - From the billing screen, click on "Budgets & alerts"
 
-  <img src="./asset/google_api/budgets_and_alerts.png" width="450">
+  <img src="./asset/google_api/budgets_and_alerts.png" width="250">
 
 - Click "CREATE BUDGET"
 
@@ -124,4 +125,4 @@ This will cover all the steps required to get set up with Google's Cloud Transla
 
   <img src="./asset/google_api/credential_restrictions.png" width="450">
 
-- You are all set. With the API key you previously copied, enter that into `dqxclarity` under the Google API section and you are good to go
+- You are all set. With the API key you previously copied, enter that into [dqxclarity]({% link dqxclarity.md %}) under the Google API section and you are good to go
