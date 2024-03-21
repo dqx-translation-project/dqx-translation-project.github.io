@@ -75,7 +75,8 @@ This will cover all the steps required to get set up with Google's Cloud Transla
 
   <img src="./asset/google_api/alert_scope.png" width="450">
 
-- For amount, put a penny (or whatever the absolute lowest amount is in your currency) and click "NEXT"
+- For the amount, the short answer is: put $10.00 USD (or whatever the equivalent is in your currency)
+  - Long answer: Google provides $10 worth of credit every month against their Google Translate API. This credit is applied at the **end** of the billing cycle. What will happen is you'll see a bill for your usage, then at the end of the month, the credit will apply to your account -- up to $10. You will want to know when you've met or are about to exceed $10.00 USD as that's when you'll be charged.
 
   <img src="./asset/google_api/alert_amount.png" width="450">
 

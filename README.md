@@ -16,6 +16,12 @@ Several of DQX's settings (Sound, BGM, controller settings, keyboard settings, e
 
 **[Installation and FAQ]({% link dqxconfig.md %})**
 
+## dqxlauncher <a href="https://github.com/dqx-translation-project/dqx_en_launcher"><img src="asset/github-mark.png" alt="github-mark" width="17"></a>
+
+DQX's launcher is entirely in Japanese. This version of the launcher does some swaps of the Japanese assets (images and text) with English assets. This makes it easier to navigate and read error messages. 
+
+**[Installation and FAQ]({% link dqxlauncher.md %})**
+
 ## send to chat <a href="https://github.com/dqx-translation-project/dqx-send-to-chat"><img src="asset/github-mark.png" alt="github-mark" width="17"></a>
 
 DQX has several quests that require you to type in Japanese in order to progress. This can prove difficult as your average English player does not know how to type in Japanese. Additionally, there is no copy/paste support in the game.
