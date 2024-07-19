@@ -14,7 +14,7 @@ dqxclarity is a Python program that enables the game to display in English. It u
   - Currently, only [DeepL]({% link deepl.md %}) and [Google Translate]({% link google_api.md %}) are supported.
 - A modern version of the Windows OS. dqxclarity is known not to work on Windows 7
   - If you are still using Windows 7, [consider upgrading](https://support.microsoft.com/en-us/windows/windows-7-support-ended-on-january-14-2020-b75d4580-2cc7-895a-2c9c-1466d9a53962#:~:text=Microsoft%20made%20a%20commitment%20to,released%20on%20October%2022%2C%202009)
-- Dragon Quest X must be installed before performing these steps
+- Dragon Quest X must be installed (and fully patched!) before performing these steps. Launching dqxclarity prior to finishing patching has the potential to corrupt your DQX install, requiring you to re-install the game. This is because dqxclarity downloads a modded DAT (game file) and places it in your DQX game directory. If the game isn't fully patched, it will attempt to use this file and cause problems.
 
 **For instructions on how to get an API key:**
 
@@ -35,25 +35,15 @@ dqxclarity is a Python program that enables the game to display in English. It u
 </p>
 
 - The recommended experience is to enable:
-  - **Translate Player Names**
-  - **Translate NPC Names**
-  - **Update Translated Game Files**
-  - **Use API Dialogue**
-- Click "API Service Settings"
-- From here, you will select the API that you signed up for in the [pre-requirements](#pre-requirements) section
-  - For DeepL, you can verify that your key works by clicking "Check Characters"
-  - For Google Translate, you will be notified after launching dqxclarity if the key doesn't work (sorry!)
+  - **Player Names**
+  - **NPC Names**
+  - **Update Game Files**
+  - Selecting either **Use DeepL** or **Use Google Translate**, based on the API that you signed up for in the [pre-requirements](#pre-requirements) section
 
-<p align="center">
-  <a href="/asset/dqxclarity/deepl_enabled.png">
-    <img src="asset/dqxclarity/deepl_enabled.png" width="250">
-  </a>
-</p>
+Once you have checked one of the API options and entered your key, click "Validate Enabled Key" and check out the message at the bottom. You should receive some type of "success" message if the key works. If the key fails to validate, you will see "Failed to validate key." If this is the case, please ensure that the key was pasted correctly. If you need help with this, please join the [Discord](https://discord.gg/dragonquestx) and ask for help in the **#clarity-questions** channel.
 
-- Click "Save Settings"
 - Click "Launch"
 - On your first launch, you will be prompted to install Python. Click "Yes"
-
 
 <p align="center">
   <a href="/asset/dqxclarity/python_prompt.png">
@@ -86,7 +76,7 @@ dqxclarity is a Python program that enables the game to display in English. It u
   </a>
 </p>
 
-- You should now notice that DQX is in English. **The blue Powershell window that opened must remain open for the entirety of your gaming session. You can minimize the window and start playing**
+- You should now notice that DQX is in English. **The black window that opened must remain open for the entirety of your gaming session. You can minimize this window and start playing!**
 
 <p align="center">
   <a href="/asset/dqxclarity/translated_login_window.png">
@@ -114,13 +104,13 @@ A few common issues:
 
 - A dependency couldn't be found. You can try deleting the `venv` folder in your dqxclarity folder and relaunching to see if it fixes your issue.
 
-If you aren't sure what to do, please stop by the [Discord](https://discord.gg/dragonquestx), post your issue in the #clarity-questions channel (with the accompanying `console.log` file attached) and we'll be happy to take a look. 
+If you aren't sure what to do, please stop by the [Discord](https://discord.gg/dragonquestx), post your issue in the #clarity-questions channel (with the accompanying `startup.log` file attached) and we'll be happy to take a look. 
 
 ### When I launch dqxclarity, the game dialog is translated, but all of the menus are still in Japanese
 
-Make sure you checked "Update Translated Game Files" in the dqxclarity window. This downloads two custom files that are then placed in your game folder, which is what enables all of the in-game menus to be translated.
+Make sure you checked "Update Game Files" in the dqxclarity window. This downloads two custom files that are then placed in your game folder, which is what enables all of the in-game menus to be translated.
 
-If you're still seeing the menus in Japanese, note that every time the game patches, it overwrites the modded files. You will need to re-download them by launching dqxclarity and ensuring that "Update Translated Game Files" is checked.
+If you're still seeing the menus in Japanese, note that every time the game patches, it overwrites the modded files. You will need to re-download them by launching dqxclarity and ensuring that "Update Game Files" is checked.
 
 ## uninstallation
 
