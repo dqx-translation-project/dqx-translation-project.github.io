@@ -35,10 +35,23 @@ You're finished. You can run this file directly or open it using any other metho
 
 <a href="/asset/dqxconfig/en_config_opened.png">
   <img src="asset/dqxconfig/en_config_opened.png" width="500">
-<a>
+</a>
 
 ## faq
 
 ### Opening the config causes my antivirus to trigger
 
 This is a false positive and is due to the original file being modified to insert the English text. You will need to allow the program to continue to run and/or allow it in your antivirus tool. This assumes you have downloaded the modified tool from [this page](#download).
+
+### Launching the game causes error code 122
+
+<a href="/asset/dqxconfig/error_code_122.png">
+  <img src="asset/dqxconfig/error_code_122.png" width="250">
+</a>
+
+This is seen when Dragon Quest X cannot find `DQXConfig.exe` in the `Game` directory.
+
+To fix:
+
+- Make sure you followed the above instructions exactly -- including naming the file correctly.
+- If the DQXConfig icon has a shield on it, this indicates that the file is requiring being run as an administrator. This typically happens due to system permissions on your computer. The easiest and most painless solution to this is to ensure that you are launching DQX as an administrator so that it has the appropriate permissions to launch DQXConfig.
