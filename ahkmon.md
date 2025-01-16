@@ -1,5 +1,0 @@
-# ahkmon
-
-## tbd
-
-TBD.

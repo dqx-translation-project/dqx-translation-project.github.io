@@ -1,0 +1,74 @@
+site_name: Dragon Quest X Translation Project
+site_url: https://dqx-translation-project.github.io
+copyright: maintained by serany
+
+plugins:
+  - glightbox  # add image zoom functionality
+
+nav:
+  - index.md
+  - dqxclarity/dqxclarity.md
+  - dqxlauncher/dqxlauncher.md
+  - dqxconfig/dqxconfig.md
+  - sendtochat/sendtochat.md
+  - troubleshooting/dqx_troubleshooting.md
+
+theme:
+  name: material
+  favicon: asset/favicon.ico
+  custom_dir: overrides
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.indexes
+    - toc.follow
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: red
+      accent: red
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/jmctune
+      name: GitHub
+    - icon: fontawesome/brands/discord
+      link: "https://discord.com"
+      name: mebo
+    - icon: bootstrap/kofi
+      link: https://ko-fi.com/serany
+      name: serany on Ko-fi
