@@ -2,11 +2,11 @@
 
 DQX's launcher is entirely in Japanese. This version of the launcher does some swaps of the Japanese assets (images and text) with English assets. This makes it easier to navigate and read error messages.
 
-<center>![EN launcher image](../asset/launcher/main.png){ width="700" }</center>
+<center>![EN launcher image](./asset/launcher/main.png){ width="700" }</center>
 
 ## download
 
-[Direct Download](https://github.com/dqx-translation-project/dqx_en_launcher/releases/latest/download/DQXLauncher.exe)
+[Direct Download :octicons-download-16:](https://github.com/dqx-translation-project/dqx_en_launcher/releases/latest/download/DQXLauncher.exe){ .md-button }
 
 ## install
 

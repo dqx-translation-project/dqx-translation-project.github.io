@@ -1,12 +1,12 @@
 # dqxconfig
 
-<center>![ja_config_opened](../asset/dqxconfig/ja_config_opened.png){ width="700" }</center>
-
 Several of DQX's settings (Sound, BGM, controller settings, keyboard settings, etc.) are controlled in an external utility packaged with the game named `DQXConfig.exe`. This configuration is entirely in Japanese and additionally will display a bunch of question marks if you don't have the Japanese language pack installed on your computer. It has been updated to reflect the English language instead.
+
+<center>![ja_config_opened](./asset/dqxconfig/ja_config_opened.png){ width="700" }</center>
 
 ## download
 
-[Direct Download](https://github.com/dqx-translation-project/dqx_en_config/releases/latest/download/DQXConfig.exe)
+[Direct Download :octicons-download-16:](https://github.com/dqx-translation-project/dqx_en_config/releases/latest/download/DQXConfig.exe){ .md-button }
 
 ## instructions
 
@@ -15,7 +15,7 @@ Several of DQX's settings (Sound, BGM, controller settings, keyboard settings, e
   - By default, this is installed in `C:\Program Files (x86)\SquareEnix\DRAGON QUEST X`
 - Open the `Game` folder (Not **Boot**!)
 
-<center>![game_directory](../asset/dqxconfig/game_directory.png){ width="500" }</center>
+<center>![game_directory](./asset/dqxconfig/game_directory.png){ width="500" }</center>
 
 - Rename the file named `DQXConfig` to `DQXConfig_original`
 
@@ -29,12 +29,12 @@ Several of DQX's settings (Sound, BGM, controller settings, keyboard settings, e
 
     If your file previously had a `.exe` at the end, make sure the `.exe` still exists in the file, so `DQXConfig.exe`
 
-<center>![replaced_file](../asset/dqxconfig/replaced_file.png){ width="500" }</center>
+<center>![replaced_file](./asset/dqxconfig/replaced_file.png){ width="500" }</center>
 
 !!! success
     You're finished. You can run this file directly or open it using any other method (in the launcher, click the purple Dracky or directly in game) and the English launcher will be used.
 
-<center>![en_config_opened](../asset/dqxconfig/en_config_opened.png){ width="500" }</center>
+<center>![en_config_opened](./asset/dqxconfig/en_config_opened.png){ width="500" }</center>
 
 ## faq
 
@@ -44,7 +44,7 @@ This is a false positive and is due to the original file being modified to inser
 
 ### Launching the game causes error code 122
 
-<center>![error_code_122](../asset/dqxconfig/error_code_122.png){ width="500" }</center>
+<center>![error_code_122](./asset/dqxconfig/error_code_122.png){ width="500" }</center>
 
 This is seen when Dragon Quest X cannot find `DQXConfig.exe` in the `Game` directory.
 

@@ -6,7 +6,7 @@ This tool aims to solve this by pasting the Japanese into the chat box for you. 
 
 ## download
 
-[Direct Download](https://github.com/dqx-translation-project/dqx-send-to-chat/releases/latest/download/send_to_chat.exe)
+[Direct Download :octicons-download-16:](https://github.com/dqx-translation-project/dqx-send-to-chat/releases/latest/download/send_to_chat.exe){ .md-button }
 
 ## instructions
 
@@ -21,7 +21,7 @@ This tool aims to solve this by pasting the Japanese into the chat box for you. 
     - Input the Japanese text you want to send to the chat screen
     - Click "Send to DQX"
 
-<center>![sendtochat_typed_hello](../asset/sendtochat/sendtochat_typed_hello.png){ width="500" }</center>
+<center>![sendtochat_typed_hello](./asset/sendtochat/sendtochat_typed_hello.png){ width="500" }</center>
 
 Although you can enter text in this window, the send to chat is commonly used for progressing quests. The same instructions apply for the "Quests" tab.
 
