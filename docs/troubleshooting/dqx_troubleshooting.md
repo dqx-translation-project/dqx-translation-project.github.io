@@ -114,7 +114,7 @@ You can try rebooting your computer to see if the error goes away.
 
 ### Why do I get error INVALID_CALL_1 in game?
 
-See the dqxclarity [faq page](../dqxclarity/dqxclarity.md#every-time-i-encounter-a-loading-screen-or-change-zones-the-game-throws-an-error-or-crashes).
+See the dqxclarity [faq page](../dqxclarity.md#every-time-i-encounter-a-loading-screen-or-change-zones-the-game-throws-an-error-or-crashes).
 
 ### Why do I get error EINVAL [invalid argument]?
 

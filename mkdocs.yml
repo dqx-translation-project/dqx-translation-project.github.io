@@ -7,10 +7,10 @@ plugins:
 
 nav:
   - index.md
-  - dqxclarity/dqxclarity.md
-  - dqxlauncher/dqxlauncher.md
-  - dqxconfig/dqxconfig.md
-  - sendtochat/sendtochat.md
+  - dqxclarity.md
+  - dqxlauncher.md
+  - dqxconfig.md
+  - sendtochat.md
   - troubleshooting/dqx_troubleshooting.md
 
 theme:

@@ -135,4 +135,4 @@ This will cover all the steps required to get set up with Google's Cloud Transla
 <center>![credential_restrictions](../../asset/google_api/credential_restrictions.png){ width="450" }</center>
 
 !!! success
-    You are all set. With the API key you previously copied, enter that into [dqxclarity](../dqxclarity.md) under the Google API section and you are good to go
+    You are all set. With the API key you previously copied, enter that into [dqxclarity](../../dqxclarity.md) under the Google API section and you are good to go

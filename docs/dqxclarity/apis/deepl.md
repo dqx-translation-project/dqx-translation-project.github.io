@@ -1,6 +1,6 @@
 # deepl
 
-This will cover all the steps required to get set up with DeepL in order to use the Translate dialog feature in [dqxclarity](../dqxclarity.md). This is used to enable live translation of server-side text in game as it is encountered.
+This will cover all the steps required to get set up with DeepL in order to use the Translate dialog feature in [dqxclarity](../../dqxclarity.md). This is used to enable live translation of server-side text in game as it is encountered.
 
 ## Requirements
 
