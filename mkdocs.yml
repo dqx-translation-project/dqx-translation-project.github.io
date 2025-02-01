@@ -4,14 +4,17 @@ copyright: maintained by serany
 
 plugins:
   - glightbox  # add image zoom functionality
+  - search
 
 nav:
-  - index.md
-  - dqxclarity.md
-  - dqxlauncher.md
-  - dqxconfig.md
-  - sendtochat.md
-  - troubleshooting/dqx_troubleshooting.md
+  - home:
+    - index.md
+    - dqxclarity.md
+    - dqxlauncher.md
+    - dqxconfig.md
+    - sendtochat.md
+  - troubleshooting:
+    - troubleshooting/dqx_troubleshooting.md
 
 theme:
   name: material
@@ -33,21 +36,27 @@ theme:
     - navigation.indexes
     - toc.follow
     - navigation.top
+    - content.tooltips
     - search.suggest
     - search.highlight
-    - search.share
   palette:
-    - scheme: default
-      primary: indigo
-      accent: indigo
+    - media: "(prefers-color-scheme)"
       toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
-    - scheme: slate
-      primary: red
+        icon: material/link
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
       accent: red
       toggle:
-        icon: material/toggle-switch
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: teal
+      toggle:
+        icon: material/weather-night
         name: Switch to light mode
 
 markdown_extensions:
@@ -56,6 +65,10 @@ markdown_extensions:
   - pymdownx.superfences
   - attr_list
   - md_in_html
+  - abbr
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
   - pymdownx.blocks.caption
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
@@ -64,14 +77,17 @@ markdown_extensions:
         custom_icons:
           - overrides/.icons
 
+watch:
+  - includes
+
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/jmctune
+      link: https://github.com/dqx-translation-project
       name: GitHub
     - icon: fontawesome/brands/discord
-      link: "https://discord.com"
-      name: mebo
+      link: "https://discord.gg/dragonquestx"
+      name: DQX Worldwide
     - icon: bootstrap/kofi
       link: https://ko-fi.com/serany
       name: serany on Ko-fi

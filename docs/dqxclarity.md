@@ -4,7 +4,7 @@ dqxclarity is a Python program that enables the game to display in English. It u
 
 ## download
 
-[Direct Download](https://github.com/dqx-translation-project/dqxclarity/releases/latest/download/dqxclarity.zip)
+[Direct Download :octicons-download-16:](https://github.com/dqx-translation-project/dqxclarity/releases/latest/download/dqxclarity.zip){ .md-button }
 
 ## pre-requirements
 

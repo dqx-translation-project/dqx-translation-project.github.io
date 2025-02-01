@@ -6,7 +6,7 @@ This tool aims to solve this by pasting the Japanese into the chat box for you. 
 
 ## download
 
-[Direct Download](https://github.com/dqx-translation-project/dqx-send-to-chat/releases/latest/download/send_to_chat.exe)
+[Direct Download :octicons-download-16:](https://github.com/dqx-translation-project/dqx-send-to-chat/releases/latest/download/send_to_chat.exe){ .md-button }
 
 ## instructions
 

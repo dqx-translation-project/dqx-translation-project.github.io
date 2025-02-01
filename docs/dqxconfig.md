@@ -1,12 +1,12 @@
 # dqxconfig
 
-<center>![ja_config_opened](./asset/dqxconfig/ja_config_opened.png){ width="700" }</center>
-
 Several of DQX's settings (Sound, BGM, controller settings, keyboard settings, etc.) are controlled in an external utility packaged with the game named `DQXConfig.exe`. This configuration is entirely in Japanese and additionally will display a bunch of question marks if you don't have the Japanese language pack installed on your computer. It has been updated to reflect the English language instead.
+
+<center>![ja_config_opened](./asset/dqxconfig/ja_config_opened.png){ width="700" }</center>
 
 ## download
 
-[Direct Download](https://github.com/dqx-translation-project/dqx_en_config/releases/latest/download/DQXConfig.exe)
+[Direct Download :octicons-download-16:](https://github.com/dqx-translation-project/dqx_en_config/releases/latest/download/DQXConfig.exe){ .md-button }
 
 ## instructions
 

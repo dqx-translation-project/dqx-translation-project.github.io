@@ -6,7 +6,7 @@ DQX's launcher is entirely in Japanese. This version of the launcher does some s
 
 ## download
 
-[Direct Download](https://github.com/dqx-translation-project/dqx_en_launcher/releases/latest/download/DQXLauncher.exe)
+[Direct Download :octicons-download-16:](https://github.com/dqx-translation-project/dqx_en_launcher/releases/latest/download/DQXLauncher.exe){ .md-button }
 
 ## install
 
