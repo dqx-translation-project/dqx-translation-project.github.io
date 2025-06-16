@@ -8,3 +8,4 @@
 *[VPN]: Virtual Private Network
 *[OTP]: One-Time Password
 *[MMORPG]: Multi-Massive Online Role-Playing Game
+*[TUI]: Terminal user interface

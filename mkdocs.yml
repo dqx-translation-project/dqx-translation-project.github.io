@@ -13,6 +13,8 @@ nav:
     - dqxlauncher.md
     - dqxconfig.md
     - sendtochat.md
+  - steamdeck:
+    - steamdeck.md
   - troubleshooting:
     - troubleshooting/dqx_troubleshooting.md
 
