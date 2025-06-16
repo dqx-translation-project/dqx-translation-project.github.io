@@ -32,7 +32,7 @@ jobs:
             mkdocs-material-
 
       - run: |
-          pip install mkdocs-material
+          pip install mkdocs-material==9.6.2
           pip install mkdocs-glightbox
 
       - run: mkdocs gh-deploy --force
