@@ -8,8 +8,9 @@ dqxclarity is a Python program that enables the game to display in English. It u
 
 ## pre-requirements
 
-- A live translation API key
-    - Currently, only [DeepL](./dqxclarity/apis/deepl.md) and [Google Translate](./dqxclarity/apis/google_api.md) are supported.
+- (Recommended) A live translation API key
+    - Currently, only [DeepL](./dqxclarity/apis/deepl.md) and [Google Translate](./dqxclarity/apis/google_api.md) are supported
+    - Note that this is not _mandatory_, but highly advised. dqxclarity also has the option of using a "free" version of Google Translate, which sneakily uses Google's Mobile UI. The translation is not nearly as good or stable as using one of the options above.
 
 !!! tip
 
@@ -43,11 +44,11 @@ dqxclarity is a Python program that enables the game to display in English. It u
     - **Player Names**
     - **NPC Names**
     - **Update Game Files**
-    - Selecting either **Use DeepL** or **Use Google Translate**, based on the API that you signed up for in the [pre-requirements](#pre-requirements) section
+    - Selecting either **Use DeepL**,  **Use Google Translate**, or **Use Free Google Translate**  based on the decision you made in the [pre-requirements](#pre-requirements) section
 
 !!! note "Validating your key"
 
-    Once you have checked one of the API options and entered your key, click "Validate Enabled Key" and check out the message at the bottom. You should receive some type of "success" message if the key works. If the key fails to validate, you will see "Failed to validate key." If this is the case, please ensure that the key was pasted correctly. If you need help with this, please join the [Discord](https://discord.gg/dragonquestx) and ask for help in the **#clarity-questions** channel.
+    Once you have checked one of the API options and entered your key, click "Validate Enabled Key" and check out the message at the bottom. You should receive some type of "success" message if the key works. This does not work with the "free" options. If the key fails to validate, you will see "Failed to validate key." If this is the case, please ensure that the key was pasted correctly. If you need help with this, please join the [Discord](https://discord.gg/dragonquestx) and ask for help in the **#clarity-questions** channel.
 
 - Click "Run"
 - On your first launch, you will be prompted to install Python. Click "Yes"
@@ -57,7 +58,6 @@ dqxclarity is a Python program that enables the game to display in English. It u
 - User Account Control will ask for elevated permissions to install Python. Click "Yes"
 
 <center>![python_install_progress](./asset/dqxclarity/python_install_progress.png){ width="500" }</center>
-
 
 - Python will install. Wait until the installation has completed
 - Once completed, you will see "Installing dqxclarity dependencies". Wait for this to complete
