@@ -38,7 +38,9 @@ dqxclarity is a Python program that enables the game to display in English. It u
 
 - Inside of the dqxclarity folder, right-click `DQXClarity.exe` and click "Run as administrator"
 
-<center>![gui](./asset/dqxclarity/gui.png){ width="500" }</center>
+![gui](./asset/dqxclarity/gui.png){ width="500" }
+/// caption
+///
 
 !!! note "We recommend checking..."
     - **Player Names**
@@ -53,27 +55,37 @@ dqxclarity is a Python program that enables the game to display in English. It u
 - Click "Run"
 - On your first launch, you will be prompted to install Python. Click "Yes"
 
-<center>![python_prompt](./asset/dqxclarity/python_prompt.png){ width="500" }</center>
+![python_prompt](./asset/dqxclarity/python_prompt.png){ width="500" }
+/// caption
+///
 
 - User Account Control will ask for elevated permissions to install Python. Click "Yes"
 
-<center>![python_install_progress](./asset/dqxclarity/python_install_progress.png){ width="500" }</center>
+![python_install_progress](./asset/dqxclarity/python_install_progress.png){ width="500" }
+/// caption
+///
 
 - Python will install. Wait until the installation has completed
 - Once completed, you will see "Installing dqxclarity dependencies". Wait for this to complete
 
-<center>![installing_deps](./asset/dqxclarity/installing_deps.png){ width="500" }</center>
+![installing_deps](./asset/dqxclarity/installing_deps.png){ width="500" }
+/// caption
+///
 
 - Briefly read through the output. The last line should read "Launch DQX and log in to continue." Once you see this message, go ahead and log into your DQX account and launch the game
 
-<center>![launch_dqx](./asset/dqxclarity/launch_dqx.png){ width="500" }</center>
+![launch_dqx](./asset/dqxclarity/launch_dqx.png){ width="500" }
+/// caption
+///
 
 - You should now notice that DQX is in English.
 
 !!! success
     The window that opened must remain open for the entirety of your gaming session. You can minimize this window and start playing!
 
-<center>![translated_login_window](./asset/dqxclarity/translated_login_window.png){ width="500" }</center>
+![translated_login_window](./asset/dqxclarity/translated_login_window.png){ width="500" }
+/// caption
+///
 
 ## installation troubleshooting
 
