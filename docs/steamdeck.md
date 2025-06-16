@@ -20,7 +20,9 @@ DQX and [dqxclarity](dqxclarity.md) can be run together directly on your Steam D
 
 - While in "Desktop Mode", select the "Application Launcher" button in the bottom left and open "Konsole"
 
-<center>![application_launcher](./asset/steamdeck/application_launcher.png){ width="500" }</center>
+![application_launcher](asset/steamdeck/application_launcher.png){ width="500" }
+/// caption
+///
 
 - This presents you with a terminal window. To get started, you will need to type the following into the Konsole window. Make sure to copy the entire line (it scrolls!):
 
@@ -42,11 +44,15 @@ bash -c "$(curl https://raw.githubusercontent.com/dqx-translation-project/steamd
 
 - In the Konsole window, paste this command and press enter. This will download the script and execute it on your Steam Deck
 
-<center>![install_command](./asset/steamdeck/install_command.png){ width="850" }</center>
+![install_command](./asset/steamdeck/install_command.png){ width="850" }
+/// caption
+///
 
 - You are presented with a TUI, which is interactable with a keyboard using the arrow keys and the enter key
 
-<center>![main_menu](./asset/steamdeck/main_menu.png){ width="500" }</center>
+![main_menu](./asset/steamdeck/main_menu.png){ width="500" }
+/// caption
+///
 
 From here, you will want to go through each option from top to bottom (1, 2, 3, etc.). This TUI will automate several commands for you and present on-screen instructions when you need to do things yourself. Just about every manual step it asks requires you to interact with your Steam client to add non-Steam games. As the script goes into detail on what to do, this guide will end here.
 
