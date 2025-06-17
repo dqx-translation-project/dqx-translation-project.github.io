@@ -60,7 +60,7 @@ If there is a specific error message attached to the error, it's best to check t
 
 ### Does DQX work on the Steam Deck?
 
-Both DQX and dqxclarity can run natively on the Steam Deck. See the [installation guide](https://dqx-translation-project.github.io/steamdeck/) on how to set them up.
+Both DQX and dqxclarity can run natively on the Steam Deck. See the [installation guide](../steamdeck.md) on how to set them up.
 
 ### What VPNs are recommended to play?
 
@@ -138,7 +138,7 @@ No, dqxclarity is strictly PC only.
 
 ### Does dqxclarity work on the Steam deck?
 
-Yes, see the [installation guide](https://dqx-translation-project.github.io/steamdeck/) on how to set it up.
+Yes, see the [installation guide](../steamdeck.md) on how to set it up.
 
 ### How much of the game is in English?
 
