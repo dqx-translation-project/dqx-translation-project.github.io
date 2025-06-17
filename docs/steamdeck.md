@@ -64,4 +64,5 @@ If you have not installed dqxclarity before and are interacting with this for th
 If you have questions, reach out in the #clarity-questions channel in the [DQX Worldwide Discord](https://discord.gg/dragonquestx). Make sure you provide as much detail as possible, including screenshots, error messages, what you did, etc. Messages like "help", "this doesn't work" or support by proxy (doing it for a friend) will be ignored.
 
 ## known issues
+
 - Pre-rendered cutscenes (such as the one that plays at the end of the Ethene prologue) will not play correctly and show as either colored bars or a black screen. If the game softlocks because of this, it will need to be forcefully closed and you will need to choose to skip the cutscene upon logging in again. This is a general Steam Deck issue with certain video formats, so there is no known solution at this time.
