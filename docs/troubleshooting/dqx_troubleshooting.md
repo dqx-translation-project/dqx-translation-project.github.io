@@ -41,7 +41,7 @@ The exception to this is during patching/downloading the game. Your VPN does not
 
 ### Why is the DQX download so slow?
 
-DQX's servers are hosted in Tokyo, Japan, so you will experience some slowness. The better answer is that the launcher severely throttles your connection during patching. It's normal for patching to take 4-5 hours even if you're on a 1gbps connection.
+DQX's servers are hosted in Tokyo, Japan, so you will experience some slowness. As of recently, the launcher no longer throttles download speeds, but you may still experience some slowness due to the physical distance from the download server.
 
 ### How do I install the rest of the versions?
 
@@ -60,7 +60,7 @@ If there is a specific error message attached to the error, it's best to check t
 
 ### Does DQX work on the Steam Deck?
 
-Dragon Quest X itself does work on the Steam Deck. If you intend on using dqxclarity's full features, you will need to sideload Windows as dqxclarity runs on Windows.
+Both DQX and dqxclarity can run natively on the Steam Deck. See the [installation guide](../steamdeck.md) on how to set them up.
 
 ### What VPNs are recommended to play?
 
@@ -138,7 +138,7 @@ No, dqxclarity is strictly PC only.
 
 ### Does dqxclarity work on the Steam deck?
 
-Yes, although not natively. You will need to sideload Windows in order for it to function.
+Yes, see the [installation guide](../steamdeck.md) on how to set it up.
 
 ### How much of the game is in English?
 
@@ -155,6 +155,4 @@ We've also received contributions from various members of the DQX community on t
 
 ### I don't have a credit card and can't use DeepL or Google Translate
 
-Without a credit card, you will be unable to use dqxclarity's live translation tooling. There is no way around this.
-
-On a more positive note, you are still available to take advantage of the game's file translations, which do not require the above. In dqxclarity, keep both translation api services unchecked and play the game as normal. You are still able to take advantage of translated menus, cutscenes, items, monster names, npc names, etc. Anything that is requested server-side will unfortunately not be able to be translated without an account to either DeepL or Google Translate.
+dqxclarity has a "Free Google Translate" option that uses Google's free mobile translation API. Although the translation quality is not as good as a proper API from either DeepL or Google, it's serviceable enough if you don't have a credit card or are on the fence about signing up for an actual DeepL/Google account.
