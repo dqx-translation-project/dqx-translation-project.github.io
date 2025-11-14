@@ -50,7 +50,7 @@ dqxclarity is a Python program that enables the game to display in English. It u
 
 !!! note "Validating your key"
 
-    Once you have checked one of the API options and entered your key, click "Validate Enabled Key" and check out the message at the bottom. You should receive some type of "success" message if the key works. This does not work with the "free" options. If the key fails to validate, you will see "Failed to validate key." If this is the case, please ensure that the key was pasted correctly. If you need help with this, please join the [Discord](https://discord.gg/dragonquestx) and ask for help in the **#clarity-questions** channel.
+    Once you have checked one of the API options and entered your key, click "Validate Enabled Key" and check out the message at the bottom. You should receive some type of "success" message if the key works. This does not work with the "free" options. If the key fails to validate, you will see "Failed to validate key." If this is the case, please ensure that the key was pasted correctly. If you need help with this, please join the [Discord](https://discord.gg/dragonquestx) and make a new post in the #clarity-help forum.
 
 - Click "Run"
 - On your first launch, you will be prompted to install Python. Click "Yes"
@@ -107,7 +107,7 @@ A few common issues:
 
 - A dependency couldn't be found. You can try deleting the `venv` folder in your dqxclarity folder and relaunching to see if it fixes your issue.
 
-If you aren't sure what to do, please stop by the [Discord](https://discord.gg/dragonquestx), post your issue in the #clarity-questions channel (with the accompanying `startup.log` file attached) and we'll be happy to take a look.
+If you aren't sure what to do, please stop by the [Discord](https://discord.gg/dragonquestx), post your issue in the #clarity-help forum (with the accompanying `startup.log` file attached) and we'll be happy to take a look.
 
 ### When I launch dqxclarity, the game dialog is translated, but all of the menus are still in Japanese
 
