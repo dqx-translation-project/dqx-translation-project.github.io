@@ -15,9 +15,9 @@ DQX and [dqxclarity](dqxclarity.md) can be run together directly on your Steam D
 - A Steam Deck booted into Desktop Mode
     - If you're in Gaming Mode (the default mode), press the "STEAM" button on your controller, select "Power" and select "Switch to Desktop"
 - Your Steam Deck must have an internet connection
-- [Recommended] GE-Proton9-5, which allows playing DQX's pre-rendered videos. DQX will work with an out of the box version of Proton, but will not render pre-rendered cutscenes without this version. See below for installation
+- [Required] GE-Proton10-26, which has support for Wine WOW64 mode and allows playing DQX's pre-rendered videos.
 
-## setting up GE-Proton9-5
+## setting up GE-Proton10-26
 
 - While in "Desktop Mode", select the "Application Launcher" button in the bottom left and open "Discover"
 
@@ -37,7 +37,7 @@ DQX and [dqxclarity](dqxclarity.md) can be run together directly on your Steam D
 /// caption
 ///
 
-- In the "ProtonUp-QT" launcher, click on "Add version". Make sure "GE-Proton" is selected under "Compatability tool" and "GE-Proton9-5" is selected for the version. If you don't see "GE-Proton9-5" in the list, click "Load more..." and search for it. Click "Install"
+- In the "ProtonUp-QT" launcher, click on "Add version". Make sure "GE-Proton" is selected under "Compatability tool" and "GE-Proton10-26" is selected for the version. If you don't see "GE-Proton10-26" in the list, click "Load more..." and search for it. Click "Install"
 
 ![protonup_qt_install](asset/steamdeck/protonup_qt_install.png){ width="500" }
 /// caption
