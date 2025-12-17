@@ -1,19 +1,8 @@
-# general dqx troubleshooting
+# frequently asked questions
 
-- [Installation](#installation)
-    - [I copied my game from one drive to another and now it doesn't work](#i-copied-my-game-from-one-drive-to-another-and-now-it-doesnt-work)
-    - [Do I need my VPN to be running all the time?](#do-i-need-my-vpn-to-be-running-all-the-time)
-    - [Why is the DQX download so slow?](#why-is-the-dqx-download-so-slow)
-    - [How do I install the rest of the versions?](#how-do-i-install-the-rest-of-the-versions)
-    - [I keep receiving an error while patching the game](#i-keep-receiving-an-error-while-patching-the-game)
-    - [Does DQX work on the Steam Deck?](#does-dqx-work-on-the-steam-deck)
-    - [What VPNs are recommended to play?](#what-vpns-are-recommended-to-play)
-    - [Where is the default installation location for DQX?](#where-is-the-default-installation-location-for-dqx)
 - [General DQX](#general-dqx)
-    - [Why does my account keep getting restricted, making me change my password?](#why-does-my-account-keep-getting-restricted-making-me-change-my-password)
     - [Why do I see question marks (????) in the game's launcher?](#why-do-i-see-question-marks-in-the-games-launcher)
     - [Why do I get error EXCEPTION\_ACCESS\_VIOLATION in game?](#why-do-i-get-error-exception_access_violation-in-game)
-    - [Why do I get error INVALID\_CALL\_1 in game?](#why-do-i-get-error-invalid_call_1-in-game)
     - [Why do I get error EINVAL \[invalid argument\]?](#why-do-i-get-error-einval-invalid-argument)
     - [My game crashes when I open a quest in the quest log](#my-game-crashes-when-i-open-a-quest-in-the-quest-log)
 - [Tooling](#tooling)
@@ -138,7 +127,7 @@ No, dqxclarity is strictly PC only.
 
 ### Does dqxclarity work on the Steam deck?
 
-Yes, see the [installation guide](../steamdeck.md) on how to set it up.
+As of patch 7.6, dqxclarity no longer works on the Steam Deck. You can still dual boot Windows.
 
 ### How much of the game is in English?
 
