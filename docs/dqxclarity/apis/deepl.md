@@ -7,14 +7,20 @@ This will cover all the steps required to get set up with DeepL in order to use 
 - A **valid** debit/credit card
 
 !!! warning "Supported countries"
-    Check DeepL's [supported countries](https://support.deepl.com/hc/en-us/articles/360020016339-DeepL-Pro-is-not-available-in-my-country) page to see if your billing country is supported. If your country is not on this list, you will receive errors during sign-up. [Google Translate API](./google_api.md) is an alternative option in this case.
+    Check DeepL's [supported countries](https://support.deepl.com/hc/en-us/articles/360020016339-Countries-where-DeepL-paid-plans-are-available) page to see if your billing country is supported. If your country is not on this list, you will receive errors during sign-up. [Google Translate API](./google_api.md) is an alternative option in this case.
 
 ## Creating an account
 
-- Visit the [DeepL Developer](https://www.deepl.com/pro#developer) registration page and click "Sign up for free"
+- Visit the [DeepL API](https://www.deepl.com/pro#developer) registration page and click "Sign up for free"
 
-!!! warning
-    Make sure you create a **Developer** account. The "For individuals and teams" key will not work with dqxclarity.
+![select_project](../../asset/deepl_api/developer_page.png){ width="600" }
+/// caption
+///
+
+!!! info
+    Signing up for the wrong account type (DeepL Translator versus DeepL API) will make it to where you can't generate a key. Make sure you are on the "DeepL API" tab before selecting "Sign up for free".
+
+    If you don't see the "DeepL API Free" column like in the screenshot, try resizing your browser.
 
 - Register for an account. There are no screenshots here as the registration process is very straight forward
 - Once your account has been created and you've signed up, if you aren't already, log in
@@ -23,7 +29,7 @@ This will cover all the steps required to get set up with DeepL in order to use 
 !!! warning
     If you see "Authentication Key (DeepL API and CAT tool integration)", your account was signed up for the wrong account type. Sometimes this is user error, but recently, it has been observed as a fault on DeepL's side. You will need to contact DeepL support (**support@deepl.com**) for assistance with correcting this. Feel free to use the below as an e-mail template for requesting for help. Be sure to provide the e-mail address and DeepL account name in your email:
 
-    *Hello, I intended to sign up for a DeepL Developer REST API (free) account, but it looks like my account was set up as an "Individuals and teams" account for use with the CAT tools. Can you please help me convert my account to a Developer account so that I can access the REST API? Thanks!*
+    > *Hello, I intended to sign up for a DeepL Developer REST API (free) account, but it looks like my account was set up as an "Individuals and teams" account for use with the CAT tools. Can you please help me convert my account to a Developer account so that I can access the REST API? Thanks!*
 
 - This key is what you will enter into dqxclarity for DeepL
 

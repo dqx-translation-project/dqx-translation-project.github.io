@@ -43,8 +43,7 @@ dqxclarity is a Python program that enables the game to display in English. It u
 ///
 
 !!! note "We recommend checking..."
-    - **Player Names**
-    - **NPC Names**
+    - **Nameplates**
     - **Update Game Files**
     - Selecting either **Use DeepL**,  **Use Google Translate**, or **Use Free Google Translate**  based on the decision you made in the [pre-requirements](#pre-requirements) section
 
@@ -91,7 +90,7 @@ dqxclarity is a Python program that enables the game to display in English. It u
 
 ### My antivirus says dqxclarity is a virus
 
-When you download and extract dqxclarity, your antivirus may trigger and flag the program as a virus. This is a false positive and can be ignored, but you may need to make an exception in your antivirus to mark the executable as OK. I recommend making an exception to the entire Clarity folder.
+When you download and extract dqxclarity, your antivirus may trigger and flag the program as a virus. This is a false positive and can be ignored, but you may need to make an exception in your antivirus to mark the executable as OK. I recommend making an exception to the entire `dqxclarity` folder. The reason this program is flagged is because it's an unsigned executable that changes frequently. Signing an executable from a trusted certificate authority costs real money per year (in the range of $70-$500 USD) and as this is a hobby project, it isn't worth the price to the developer.
 
 ### I extracted the zip and the dqxclarity.exe program disappeared (or isn't there)
 
@@ -99,13 +98,7 @@ Your antivirus is removing dqxclarity from your computer. I'd suggest [adding an
 
 ### When I launch dqxclarity, a window opens and immediately closes
 
-There are so many reasons why this could occur, but first, take a look inside of your dqxclarity folder and look for a folder called `logs`. Inside of that is a file called `startup.log`. The error message should be listed in here.
-
-A few common issues:
-
-- There's a bug within dqxclarity where users that have their computer locale/region set to something non-English experience a crash when launching. This is due to Python being unable to evaluate the running processes on your computer to see if DQX is running. You can bypass this by disabling "Update Translated Game Files" and additionally starting dqxclarity *after* DQX has been open. You'll want to wait until you're on the "Important Notice" screen to launch dqxclarity.
-
-- A dependency couldn't be found. You can try deleting the `venv` folder in your dqxclarity folder and relaunching to see if it fixes your issue.
+There are so many reasons why this could occur, but first, take a look inside of your dqxclarity folder and look for a folder called `logs`. Inside of that is a file called `startup.log`. The error message should be listed in here. If you don't see a `startup.log` file, the program is failing before it can even start. This is likely due to issues with PowerShell that will need to be troubleshooted as the launcher runs `run_clarity.ps1`.
 
 If you aren't sure what to do, please stop by the [Discord](https://discord.gg/dragonquestx), post your issue in the #clarity-help forum (with the accompanying `startup.log` file attached) and we'll be happy to take a look.
 
@@ -138,18 +131,3 @@ Doing either of these things will broadcast a message in English that all nearby
 ### Every time I talk to an NPC, my game freezes for a few seconds
 
 This is not a bug, but an (unfortunate) expected experience. As we don't have access to server-side text in game, text that is encountered is translated on-the-fly by sending it to a translation service like DeepL or Google Translate. The time it takes for the text to send, be translated and returned is the duration of the pause you're experiencing. There isn't really anything we can do about this issue and it's just a behavior you have to get used to.
-
-### Every time I encounter a loading screen or change zones, the game throws an error or crashes!
-
-The reason this happens is because dqxclarity does not currently have an intelligent way to re-hook itself back into the game. During loading screens, the game has to "hide" the fact that it's inside of the process, or you will receive an error message (INVALID_CALL_1). dqxclarity is configured to wait a short period of time during loading screens before re-attaching to the game. If you have a slow/older computer that takes too much time to transition out of the loading screen, you will inconsistently (and possibly consistently) run into this problem.
-
-**Workaround:** Note that I will not support installations that run into these issues. This problem is usually seen with people that run DQX on very slow/old computers or laptops. I can provide you a workaround that you can try, but it's just a workaround.
-
-- Inside of your dqxclarity folder, go into the `hooking` folder and open `hide_hooks.py` in a text editor (like Notepad, Notepad++, etc.)
-- Look for this very specific line: `time.sleep(1)`
-    - This number indicates how long dqxclarity waits (in seconds) before it re-attaches itself to the game
-- You can attempt to tweak the wait time by changing this number from `1` -> `2`.
-    - If the errors continue, you can try increasing this number in `.5` second increments until the issue goes away. Changing this value too high will most certainly have diminishing returns and could affect other areas of dqxclarity.
-
-!!! warning
-    Since you've directly edited the file, any future updates from dqxclarity will overwrite these changes. You will need to come back into this file and change the value back to what you used before.

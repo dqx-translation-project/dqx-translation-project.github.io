@@ -4,7 +4,6 @@
     - [Why do I see question marks (????) in the game's launcher?](#why-do-i-see-question-marks-in-the-games-launcher)
     - [Why do I get error EXCEPTION\_ACCESS\_VIOLATION in game?](#why-do-i-get-error-exception_access_violation-in-game)
     - [Why do I get error EINVAL \[invalid argument\]?](#why-do-i-get-error-einval-invalid-argument)
-    - [My game crashes when I open a quest in the quest log](#my-game-crashes-when-i-open-a-quest-in-the-quest-log)
 - [Tooling](#tooling)
     - [Why do I need to install Python?](#why-do-i-need-to-install-python)
     - [Does dqxclarity work on the Switch?](#does-dqxclarity-work-on-the-switch)
@@ -47,9 +46,9 @@ Generally, this is due to a connection issue between you and the download server
 
 If there is a specific error message attached to the error, it's best to check the remaining FAQs on this page, Google the error code or ask for help in the Dragon Quest X Worldwide [discord server](https://discord.gg/dragonquestx) for volunteer assistance.
 
-### Does DQX work on the Steam Deck?
+### Does dqxclarity work on the Steam Deck/Linux?
 
-Both DQX and dqxclarity can run natively on the Steam Deck. See the [installation guide](../steamdeck.md) on how to set them up.
+Both DQX and dqxclarity can run on the Steam Deck/Linux, although no official support is provided for getting this working. The developer has chosen not to chase the many WINE issues that come with emulating Windows software. You can join the [discord server](https://discord.gg/dragonquestx) and participate in the "DQX on Steam Deck/Linux/WINE" thread to get help from the community on getting this working.
 
 ### What VPNs are recommended to play?
 
@@ -101,19 +100,11 @@ There are too many reasons why this error might come up, but here are a few reas
 
 You can try rebooting your computer to see if the error goes away.
 
-### Why do I get error INVALID_CALL_1 in game?
-
-See the dqxclarity [faq page](../dqxclarity.md#every-time-i-encounter-a-loading-screen-or-change-zones-the-game-throws-an-error-or-crashes).
-
 ### Why do I get error EINVAL [invalid argument]?
 
 This is likely due to an old or corrupt version of the dat mod.
 
 When dqxclarity is launched with "Update Translated Game Files", it automatically downloads the files and places them in your DQX directory. You will want to re-launch dqxclarity with this checked in order to grab the latest dat mod.
-
-### My game crashes when I open a quest in the quest log
-
-In dqxclarity, disable "Enable Community Logging". This is a bug with an unknown fix at this time.
 
 ## Tooling
 
@@ -125,13 +116,9 @@ dqxclarity uses the Python programming language to run. It is required and will 
 
 No, dqxclarity is strictly PC only.
 
-### Does dqxclarity work on the Steam deck?
-
-As of patch 7.6, dqxclarity no longer works on the Steam Deck. You can still dual boot Windows.
-
 ### How much of the game is in English?
 
-As of this writing (February 2024), any files found in the game files are either hand translated or machine translated. All of the main story has been hand translated by various contributors. Most of the gaidens (stories supporting the main story) are machine translated. All of the things you interact with (menus, spells, skills, items, housing, monster/npc names) have been hand translated. Any text that is server side is machine translated as it is encountered in game.
+As of this writing (January 2025), any files found in the game files are either hand translated or machine translated. All of the main story has been hand translated by various contributors. Most of the gaidens (stories supporting the main story) are machine translated. All of the things you interact with (menus, spells, skills, items, housing, monster/npc names) have been hand translated. Any text that is server side is machine translated as it is encountered in game.
 
 ### Who is working on this project?
 
