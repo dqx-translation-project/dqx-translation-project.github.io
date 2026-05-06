@@ -7,7 +7,7 @@
 - [Tooling](#tooling)
     - [Why do I need to install Python?](#why-do-i-need-to-install-python)
     - [Does dqxclarity work on the Switch?](#does-dqxclarity-work-on-the-switch)
-    - [Does dqxclarity work on the Steam deck?](#does-dqxclarity-work-on-the-steam-deck)
+    - [Does dqxclarity work on the Steam Deck or Linux?](#does-dqxclarity-work-on-the-steam-deck-or-linux)
     - [How much of the game is in English?](#how-much-of-the-game-is-in-english)
     - [Who is working on this project?](#who-is-working-on-this-project)
     - [I don't have a credit card and can't use DeepL or Google Translate](#i-dont-have-a-credit-card-and-cant-use-deepl-or-google-translate)
@@ -46,7 +46,7 @@ Generally, this is due to a connection issue between you and the download server
 
 If there is a specific error message attached to the error, it's best to check the remaining FAQs on this page, Google the error code or ask for help in the Dragon Quest X Worldwide [discord server](https://discord.gg/dragonquestx) for volunteer assistance.
 
-### Does dqxclarity work on the Steam Deck/Linux?
+### Does dqxclarity work on the Steam Deck or Linux?
 
 Both DQX and dqxclarity can run on the Steam Deck/Linux, although no official support is provided for getting this working. The developer has chosen not to chase the many WINE issues that come with emulating Windows software. You can join the [discord server](https://discord.gg/dragonquestx) and participate in the "DQX on Steam Deck/Linux/WINE" thread to get help from the community on getting this working.
 
@@ -104,7 +104,7 @@ You can try rebooting your computer to see if the error goes away.
 
 This is likely due to an old or corrupt version of the dat mod.
 
-When dqxclarity is launched with "Update Translated Game Files", it automatically downloads the files and places them in your DQX directory. You will want to re-launch dqxclarity with this checked in order to grab the latest dat mod.
+Make sure you click the "Patch Game Files" button on the "Game" tab in dqxclarity to make sure you have the latest dat mod files.
 
 ## Tooling
 
