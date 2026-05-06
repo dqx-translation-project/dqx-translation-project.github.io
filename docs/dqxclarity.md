@@ -8,24 +8,28 @@ dqxclarity is a Python program that enables the game to display in English. It u
 
 ## pre-requirements
 
-- (Recommended) A live translation API key
-    - Currently, only [DeepL](./dqxclarity/apis/deepl.md) and [Google Translate](./dqxclarity/apis/google_api.md) are supported
-    - Note that this is not _mandatory_, but highly advised. dqxclarity also has the option of using a "free" version of Google Translate, which sneakily uses Google's Mobile UI. The translation is not nearly as good or stable as using one of the options above.
+- (Recommended) A live translation API
+    - dqxclarity supports several paid API options, as well as free trials for [DeepL](./dqxclarity/apis/deepl.md) and [Google Translate](./dqxclarity/apis/google_api.md), which now have much more limited/restrictive free trials than they had previously.
+    - dqxclarity also has the option of using a "free" version of several APIs. The translation is not as good or stable as using one of the options above, but it is an option
+	for those who don't wish to use a paid one.
 
 !!! tip
 
-    An API key is effectively a password used to authenticate yourself against a service (like DeepL or Google Translate.) This key is provided to you after setting up an account with either service and should be **treated as sensitive**. Anyone with this key has the equivalent of your username and password to another website.
+    An API key is effectively a password used to authenticate yourself against a service (like DeepL or Google Translate.) This key is provided to you after setting up an account with an API service and should be **treated as sensitive**. Anyone with this key has the equivalent of your username and password to another website.
 
 - A modern version of the Windows OS (10/11). dqxclarity is known **not** to work on Windows 7
 
 !!! warning
 
-    Dragon Quest X **must be installed** (and fully patched!) before performing these steps. Launching dqxclarity prior to finishing patching has the potential to corrupt your DQX install, requiring you to re-install the game. This is because dqxclarity downloads a modded DAT (game file) and places it in your DQX game directory. If the game isn't fully patched, it will attempt to use this file and cause problems.
+    Dragon Quest X **must be installed** (and fully patched!) before performing these steps. Using dqxclarity to patch the game into English
+	prior to the normal patching process finishing may corrupt your DQX install, requiring you to re-install the game. This is because dqxclarity downloads a modded DAT (game file) and places it in your DQX game directory. If the game isn't fully patched, it will attempt to use this file and cause problems.
 
 **For instructions on how to get an API key:**
 
-- [DeepL](./dqxclarity/apis/deepl.md)
-- [Google Translate](./dqxclarity/apis/google_api.md)
+As of now, this site only covers sign-up instructions for the DeepL and Google Translate APIs.
+
+- [DeepL](./dqxclarity/apis/deepl.md) (limited free trial)
+- [Google Translate](./dqxclarity/apis/google_api.md) (requires a one-time payment for trial sign-up)
 
 ## installation
 
@@ -34,46 +38,43 @@ dqxclarity is a Python program that enables the game to display in English. It u
 
 !!! warning
 
-    Do not place this folder in `C:\Program Files (x86)`. Either your desktop, My Documents, or anywhere else will work. Additionally, the program does not currently support having accented characters, umlauts, diacritics, or any non-english character in the path. If your username contains these letters, place the folder somewhere else.
+    Do not place this folder in `C:\Program Files (x86)`. Either your desktop, My Documents, or anywhere else will work. Additionally, the program does not currently support having accented characters, umlauts, diacritics, or any non-english character in the path. If your username contains these letters, place the folder somewhere else. A OneDrive directory
+	will also not work, and the program will not open if it detects it is in such a directory.
 
 - Inside of the dqxclarity folder, right-click `DQXClarity.exe` and click "Run as administrator"
 
-![gui](./asset/dqxclarity/gui.png){ width="500" }
+- Upon launching, dqxclarity will prompt you to install .NET 9 if you do not have it. Go through this install process
+
+- dqxclarity will open. If you do not have python already installed, User Account Control will ask for permission to install it. Click "Yes"
+
+- Click "OK" as shown in the screenshot
+
+![gui](./asset/dqxclarity/python_prompt_new.png){ width="500" }
 /// caption
 ///
 
-!!! note "We recommend checking..."
-    - **Nameplates**
-    - **Update Game Files**
-    - Selecting either **Use DeepL**,  **Use Google Translate**, or **Use Free Google Translate**  based on the decision you made in the [pre-requirements](#pre-requirements) section
+- Python will silently install in the background as well as other dependencies, once this finishes, you'll see the GUI below.
+
+![gui](./asset/dqxclarity/gui_new.png){ width="500" }
+/// caption
+///
+
+
+!!! note "Recommended settings are..."
+    - Check **Nameplates** under the **General** tab
+	- Selecting an API based on the decision you made in the [pre-requirements](#pre-requirements) section under the **General** tab
+    - Click **Patch Game Files**, **Patch Launcher**, and **Patch Config** under the **Game** tab to patch the game into English and use the English versions of the DQX launcher and config program respectively
+	- Check **Launch DQX with dqxclarity** in the **Game** tab to automically open the DQX launcher when dqxclarity is run
 
 !!! note "Validating your key"
 
     Once you have checked one of the API options and entered your key, click "Validate Enabled Key" and check out the message at the bottom. You should receive some type of "success" message if the key works. This does not work with the "free" options. If the key fails to validate, you will see "Failed to validate key." If this is the case, please ensure that the key was pasted correctly. If you need help with this, please join the [Discord](https://discord.gg/dragonquestx) and make a new post in the #clarity-help forum.
 
-- Click "Run"
-- On your first launch, you will be prompted to install Python. Click "Yes"
+- Click "Run" in the bottom right corner
 
-![python_prompt](./asset/dqxclarity/python_prompt.png){ width="500" }
-/// caption
-///
+- Briefly read through the output. The last line should read "Done! Keep this window open" Once you see this message, go ahead and log into your DQX account
 
-- User Account Control will ask for elevated permissions to install Python. Click "Yes"
-
-![python_install_progress](./asset/dqxclarity/python_install_progress.png){ width="500" }
-/// caption
-///
-
-- Python will install. Wait until the installation has completed
-- Once completed, you will see "Installing dqxclarity dependencies". Wait for this to complete
-
-![installing_deps](./asset/dqxclarity/installing_deps.png){ width="500" }
-/// caption
-///
-
-- Briefly read through the output. The last line should read "Launch DQX and log in to continue." Once you see this message, go ahead and log into your DQX account and launch the game
-
-![launch_dqx](./asset/dqxclarity/launch_dqx.png){ width="500" }
+![launch_dqx](./asset/dqxclarity/launch_dqx_new.png){ width="500" }
 /// caption
 ///
 
@@ -96,17 +97,11 @@ When you download and extract dqxclarity, your antivirus may trigger and flag th
 
 Your antivirus is removing dqxclarity from your computer. I'd suggest [adding an exclusion](https://support.microsoft.com/en-us/windows/add-an-exclusion-to-windows-security-811816c0-4dfd-af4a-47e4-c301afe13b26) to your entire dqxclarity folder in this case. If you use something other than Windows Security, you will need to Google how to add an exclusion/exception using that software.
 
-### When I launch dqxclarity, a window opens and immediately closes
-
-There are so many reasons why this could occur, but first, take a look inside of your dqxclarity folder and look for a folder called `logs`. Inside of that is a file called `startup.log`. The error message should be listed in here. If you don't see a `startup.log` file, the program is failing before it can even start. This is likely due to issues with PowerShell that will need to be troubleshooted as the launcher runs `run_clarity.ps1`.
-
-If you aren't sure what to do, please stop by the [Discord](https://discord.gg/dragonquestx), post your issue in the #clarity-help forum (with the accompanying `startup.log` file attached) and we'll be happy to take a look.
-
 ### When I launch dqxclarity, the game dialog is translated, but all of the menus are still in Japanese
 
-Make sure you checked "Update Game Files" in the dqxclarity window. This downloads two custom files that are then placed in your game folder, which is what enables all of the in-game menus to be translated.
+Make sure you clicked "Patch Game Files" in the "Game" tab before launching the game. This downloads two custom files that are then placed in your game folder, which is what enables all of the in-game menus to be translated.
 
-If you're still seeing the menus in Japanese, note that every time the game patches, it overwrites the modded files. You will need to re-download them by launching dqxclarity and ensuring that "Update Game Files" is checked.
+If you're still seeing the menus in Japanese, note that every time the game patches, it overwrites the modded files. You will need to re-download them by clicking the "Patch Game Files" button again.
 
 ## uninstallation
 
@@ -130,4 +125,4 @@ Doing either of these things will broadcast a message in English that all nearby
 
 ### Every time I talk to an NPC, my game freezes for a few seconds
 
-This is not a bug, but an (unfortunate) expected experience. As we don't have access to server-side text in game, text that is encountered is translated on-the-fly by sending it to a translation service like DeepL or Google Translate. The time it takes for the text to send, be translated and returned is the duration of the pause you're experiencing. There isn't really anything we can do about this issue and it's just a behavior you have to get used to.
+This is not a bug, but an (unfortunate) expected experience. As we don't have access to server-side text in game, text that is encountered is translated on-the-fly by sending it to a translation service like DeepL or Google Translate. The time it takes for the text to send, be translated and returned is the duration of the pause you're experiencing, and the length of the pause can vary based on the API service you choose to use. There isn't really anything we can do about this issue and it's just a behavior you have to get used to.
