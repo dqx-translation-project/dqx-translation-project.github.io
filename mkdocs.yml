@@ -1,4 +1,4 @@
-site_name: Dragon Quest X Translation Project
+site_name: ""
 site_url: https://dqx-translation-project.github.io
 copyright: maintained by serany
 
@@ -7,14 +7,14 @@ plugins:
   - search
 
 nav:
-  - home:
-    - index.md
-    - dqxclarity.md
-    - dqxlauncher.md
-    - dqxconfig.md
-    - sendtochat.md
-  - faq:
-    - faq/faq.md
+  - welcome: index.md
+  - dqxclarity:
+    - install: dqxclarity.md
+    - troubleshooting: troubleshooting.md
+    - apis:
+      - deepl: dqxclarity/apis/deepl.md
+      - google: dqxclarity/apis/google_api.md
+  - faq: faq/index.md
 
 theme:
   name: material
@@ -28,10 +28,7 @@ theme:
     - navigation.instant.prefetch
     - navigation.instant.progress
     - navigation.tracking
-    - navigation.tabs
-    - navigation.tabs.sticky
     - navigation.sections
-    - navigation.expand
     - navigation.path
     - navigation.indexes
     - toc.follow
@@ -59,16 +56,15 @@ theme:
         icon: material/weather-night
         name: Switch to light mode
 
+extra_css:
+  - stylesheets/extra.css
+
 markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
   - attr_list
   - md_in_html
-  - abbr
-  - pymdownx.snippets:
-      auto_append:
-        - includes/abbreviations.md
   - pymdownx.blocks.caption
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
@@ -76,9 +72,6 @@ markdown_extensions:
       options:
         custom_icons:
           - overrides/.icons
-
-watch:
-  - includes
 
 extra:
   social:
