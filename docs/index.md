@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 # home
 
 Our small team maintains a variety of utilities to empower players to play the MMORPG, Dragon Quest X, in English.

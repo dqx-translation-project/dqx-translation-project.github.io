@@ -2,6 +2,10 @@
 
 This will cover all the steps required to get set up with Google's Cloud Translate API service in order to use the Translate dialog feature in `dqxclarity`.
 
+!!! warning
+
+    Google has revamped their sign-up process, so these instructions may vary slightly. We've noticed that Google is now requiring some users to "pre-pay" anywhere between $10-$50 USD before their billing account is considered registered.
+
 ## requirements
 
 - A valid credit card

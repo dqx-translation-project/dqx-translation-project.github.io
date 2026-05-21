@@ -1,16 +1,4 @@
-# frequently asked questions
-
-- [General DQX](#general-dqx)
-    - [Why do I see question marks (????) in the game's launcher?](#why-do-i-see-question-marks-in-the-games-launcher)
-    - [Why do I get error EXCEPTION\_ACCESS\_VIOLATION in game?](#why-do-i-get-error-exception_access_violation-in-game)
-    - [Why do I get error EINVAL \[invalid argument\]?](#why-do-i-get-error-einval-invalid-argument)
-- [Tooling](#tooling)
-    - [Why do I need to install Python?](#why-do-i-need-to-install-python)
-    - [Does dqxclarity work on the Switch?](#does-dqxclarity-work-on-the-switch)
-    - [Does dqxclarity work on the Steam Deck or Linux?](#does-dqxclarity-work-on-the-steam-deck-or-linux)
-    - [How much of the game is in English?](#how-much-of-the-game-is-in-english)
-    - [Who is working on this project?](#who-is-working-on-this-project)
-    - [I don't have a credit card and can't use DeepL or Google Translate](#i-dont-have-a-credit-card-and-cant-use-deepl-or-google-translate)
+[TOC]
 
 ## Installation
 
@@ -29,7 +17,7 @@ The exception to this is during patching/downloading the game. Your VPN does not
 
 ### Why is the DQX download so slow?
 
-DQX's servers are hosted in Tokyo, Japan, so you will experience some slowness. As of recently, the launcher no longer throttles download speeds, but you may still experience some slowness due to the physical distance from the download server.
+DQX's servers are hosted in Tokyo, Japan, so you will experience some slowness. The launcher no longer throttles download speeds, but you may still experience some slowness due to the physical distance from the download server.
 
 ### How do I install the rest of the versions?
 
@@ -131,4 +119,21 @@ We've also received contributions from various members of the DQX community on t
 
 ### I don't have a credit card and can't use DeepL or Google Translate
 
-dqxclarity has a "Free Google Translate" option that uses Google's free mobile translation API. Although the translation quality is not as good as a proper API from either DeepL or Google, it's serviceable enough if you don't have a credit card or are on the fence about signing up for an actual DeepL/Google account.
+dqxclarity has a few "free" options you can use instead. Although the translation quality is not as good as a proper paid API, it's serviceable enough if you don't have a credit card or are on the fence about signing up for an actual DeepL/Google account.
+
+### Can I get in trouble for using dqxclarity?
+
+Short answer: probably not. Although what dqxclarity is doing is against the ToS, many overseas players have been using dqxclarity for quite some time and we've heard of no one receiving a ban, or even warned for using it. This doesn't mean that it _can't_ happen, so there will always be an inherent risk, but it is likely to be very small.
+
+### Can Japanese players see that I'm using dqxclarity?
+
+Everything dqxclarity does is client side, so only you will see it. _However_, there are 2 specific instances where they _can_ determine that you're using dqxclarity:
+
+- Crafting a 3 star item
+- Catching a King sized fish
+
+Doing either of these things will broadcast a message in English that all nearby players can see. English itself isn't prohibited, but this message is automated and supposed to be in Japanese, so seeing it in English instead of Japanese could raise an eyebrown. It's doesn't hurt to craft and fish in secluded places, such as your home, a My Town, or a less populated server/area if you're paranoid, but others perform these same actions in public without a problem.
+
+### Every time I talk to an NPC, my game freezes for a few seconds
+
+This is not a bug, but an (unfortunate) expected experience. As we don't have access to server-side text in game, text that is encountered is translated on-the-fly by sending it to a translation service like DeepL or Google Translate. The time it takes for the text to send, be translated and returned is the duration of the pause you're experiencing, and the length of the pause can vary based on the API service you choose to use. There isn't really anything we can do about this issue and it's just a behavior you have to get used to.
