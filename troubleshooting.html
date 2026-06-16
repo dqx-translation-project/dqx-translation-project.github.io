@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Troubleshooting - DQX Translation Project</title>
+  <meta name="description" content="Common issues and fixes for dqxclarity - antivirus, missing files, menus still in Japanese.">
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <noscript><style>.reveal { opacity: 1; transform: none; }</style></noscript>
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav container" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav__logo">DQX <span>Translation Project</span></a>
+    <div class="nav__links">
+      <a href="index.html">Home</a>
+      <a href="dqxclarity.html">dqxclarity</a>
+      <a href="faq.html">FAQ</a>
+      <a href="troubleshooting.html">Troubleshooting</a>
+    </div>
+    <div class="nav__actions">
+      <a href="https://github.com/dqx-translation-project/dqxclarity" class="btn btn--ghost btn--sm" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://discord.gg/dragonquestx" class="btn btn--primary btn--sm" target="_blank" rel="noopener">Discord</a>
+    </div>
+    <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<div class="page-hero">
+  <div class="container">
+    <a href="index.html" class="breadcrumb">Home</a>
+    <h1>Troubleshooting</h1>
+    <p>Common issues with dqxclarity and how to fix them. Still stuck? Ask in the <a href="https://discord.gg/dragonquestx">DQX Worldwide Discord</a>.</p>
+  </div>
+</div>
+
+<div class="content-wrapper">
+  <div class="container">
+    <div class="content">
+
+      <div class="accordion-item reveal">
+        <button class="accordion-trigger">
+          My antivirus says dqxclarity is a virus
+          <i class="accordion-icon">&#9662;</i>
+        </button>
+        <div class="accordion-body">
+          <p>
+            This is a <strong>false positive</strong> and can be safely ignored.
+            dqxclarity is an unsigned executable that changes frequently - signing a certificate from a trusted authority
+            costs $70-$500 USD per year, which isn&rsquo;t worthwhile for a hobby project.
+          </p>
+          <p>
+            You may need to add an exception in your antivirus software to mark the executable as OK.
+            It&rsquo;s recommended to add an exclusion for the entire <code>dqxclarity</code> folder.
+          </p>
+        </div>
+      </div>
+
+      <div class="accordion-item reveal">
+        <button class="accordion-trigger">
+          I extracted the zip and dqxclarity.exe disappeared (or isn&rsquo;t there)
+          <i class="accordion-icon">&#9662;</i>
+        </button>
+        <div class="accordion-body">
+          <p>
+            Your antivirus is removing dqxclarity from your computer after extraction.
+            <a href="https://support.microsoft.com/en-us/windows/add-an-exclusion-to-windows-security-811816c0-4dfd-af4a-47e4-c301afe13b26"
+               target="_blank" rel="noopener">Add an exclusion</a> for the entire dqxclarity folder in Windows Security
+            (or your antivirus software of choice), then re-extract the zip.
+          </p>
+        </div>
+      </div>
+
+      <div class="accordion-item reveal">
+        <button class="accordion-trigger">
+          When I launch dqxclarity, the game dialog is translated but all the menus are still in Japanese
+          <i class="accordion-icon">&#9662;</i>
+        </button>
+        <div class="accordion-body">
+          <p>
+            Make sure you clicked <strong>Patch Game Files</strong> in the <strong>Installation Configuration</strong> tab before launching the game.
+            This downloads two custom files and places them in your game folder - that&rsquo;s what enables the in-game menus to be in English.
+          </p>
+          <p>
+            If you&rsquo;re still seeing Japanese menus after patching: every time the game updates, it overwrites the modded files.
+            You&rsquo;ll need to re-click <strong>Patch Game Files</strong> after each game patch.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <div class="footer__logo">DQX <span>Translation Project</span></div>
+        <p class="footer__desc">Tools built to play Dragon Quest X Online in English.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Docs</h4>
+        <ul>
+          <li><a href="dqxclarity.html">dqxclarity</a></li>
+          <li><a href="troubleshooting.html">Troubleshooting</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="apis/deepl.html">DeepL API</a></li>
+          <li><a href="apis/google.html">Google Translate API</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="https://github.com/dqx-translation-project/dqxclarity" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://discord.gg/dragonquestx" target="_blank" rel="noopener">Discord</a></li>
+          <li><a href="https://ko-fi.com/serany" target="_blank" rel="noopener">Ko-fi (serany)</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__copy">maintained by serany - not affiliated with Square Enix</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

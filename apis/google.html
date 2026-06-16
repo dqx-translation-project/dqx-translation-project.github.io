@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Translate API Setup - DQX Translation Project</title>
+  <meta name="description" content="How to set up Google Cloud Translation API for use with dqxclarity.">
+  <link rel="icon" href="../assets/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <noscript><style>.reveal { opacity: 1; transform: none; }</style></noscript>
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav container" role="navigation" aria-label="Main navigation">
+    <a href="../index.html" class="nav__logo">DQX <span>Translation Project</span></a>
+    <div class="nav__links">
+      <a href="../index.html">Home</a>
+      <a href="../dqxclarity.html">dqxclarity</a>
+      <a href="../faq.html">FAQ</a>
+      <a href="../troubleshooting.html">Troubleshooting</a>
+    </div>
+    <div class="nav__actions">
+      <a href="https://github.com/dqx-translation-project/dqxclarity" class="btn btn--ghost btn--sm" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://discord.gg/dragonquestx" class="btn btn--primary btn--sm" target="_blank" rel="noopener">Discord</a>
+    </div>
+    <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<div class="page-hero">
+  <div class="container">
+    <a href="../dqxclarity.html" class="breadcrumb">dqxclarity</a>
+    <h1>Google Translate API Setup</h1>
+    <p>Set up Google Cloud Translation API to use with dqxclarity. Takes about 10 minutes.</p>
+  </div>
+</div>
+
+<div class="container">
+  <nav class="jump-nav" aria-label="Page sections">
+    <a href="#requirements">Requirements</a>
+    <a href="#project">Create Project</a>
+    <a href="#billing">Billing Account</a>
+    <a href="#alerts">Billing Alerts</a>
+    <a href="#enable">Enable API</a>
+    <a href="#credential">API Key</a>
+  </nav>
+</div>
+
+<div class="content-wrapper">
+  <div class="container">
+    <div class="content">
+
+      <div class="callout callout--warning">
+        <div class="callout__title">⚠ Note</div>
+        <p>
+          Google has revamped their sign-up process - these instructions may vary slightly.
+          Google is now requiring some users to pre-pay anywhere between $10–$50 USD before their billing account is considered registered.
+        </p>
+      </div>
+
+      <h2 id="requirements">Requirements</h2>
+      <ul>
+        <li>A valid credit card</li>
+      </ul>
+
+      <div class="callout callout--info">
+        <div class="callout__title">ℹ Pricing</div>
+        <p>
+          This service is free for the first <strong>500,000 characters per month</strong>. Going over that limit will incur charges.
+          500,000 characters is a lot - unless you&rsquo;re doing 10+ hours of story content per day, you&rsquo;re more than fine.
+          See <a href="https://cloud.google.com/translate/pricing" target="_blank" rel="noopener">Cloud Translation pricing</a> for details.
+          dqxclarity uses the &ldquo;Cloud Translation - Basic&rdquo; tier.
+        </p>
+      </div>
+
+      <!-- Create project -->
+      <h2 id="project">Create Your Google Project</h2>
+      <ol>
+        <li>Navigate to the <a href="https://console.cloud.google.com" target="_blank" rel="noopener">Google Cloud Console</a>. Log in if prompted.</li>
+        <li>In the top menu, click <strong>Select a project</strong>.</li>
+      </ol>
+      <img src="../assets/google_api/select_project.png" alt="Select a project in Google Cloud Console" class="img-sm">
+
+      <ol start="3">
+        <li>Click <strong>NEW PROJECT</strong>.</li>
+      </ol>
+      <img src="../assets/google_api/new_project.png" alt="New Project button" class="img-sm">
+
+      <ol start="4">
+        <li>Give the project a recognizable name - something like <em>&ldquo;DQX Translation&rdquo;</em> - then click <strong>Create</strong>. You&rsquo;ll be taken back to the main dashboard.</li>
+      </ol>
+      <img src="../assets/google_api/name_your_project.png" alt="Name your project" class="img-sm">
+
+      <!-- Billing -->
+      <h2 id="billing">Set Up Your Billing Account</h2>
+      <ol>
+        <li>Type <strong>translate</strong> in the search bar at the top and select <strong>Cloud Translation API</strong>.</li>
+      </ol>
+      <img src="../assets/google_api/search_translate.png" alt="Search for Cloud Translation API" class="img-sm">
+
+      <ol start="2">
+        <li>Click <strong>Enable</strong> to enable the Cloud Translation API for your project.</li>
+      </ol>
+      <img src="../assets/google_api/cloud_translation_api_image.png" alt="Enable Cloud Translation API" class="img-sm">
+
+      <ol start="3">
+        <li>You&rsquo;ll be prompted to link a billing account. Click <strong>ENABLE BILLING</strong>.</li>
+      </ol>
+      <img src="../assets/google_api/billing_required.png" alt="Billing required prompt" class="img-sm">
+
+      <ol start="4">
+        <li>Click <strong>MANAGE BILLING ACCOUNTS</strong>.</li>
+      </ol>
+      <img src="../assets/google_api/manage_billing_accounts.png" alt="Manage billing accounts" class="img-sm">
+
+      <ol start="5">
+        <li>Click <strong>CREATE ACCOUNT</strong>.</li>
+      </ol>
+      <img src="../assets/google_api/create_billing_account.png" alt="Create billing account button" class="img-sm">
+
+      <ol start="6">
+        <li>Name your billing account something meaningful (like &ldquo;my credit card&rdquo;), select your country, then click <strong>CONTINUE</strong>.</li>
+      </ol>
+      <img src="../assets/google_api/create_new_billing_account.png" alt="Create new billing account form" class="img-sm">
+
+      <ol start="7">
+        <li>Add or select a payment method, then click <strong>SUBMIT AND ENABLE BILLING</strong>.</li>
+      </ol>
+      <img src="../assets/google_api/payment_methods.png" alt="Payment methods" class="img-sm">
+
+      <!-- Alerts -->
+      <h2 id="alerts">Set Up Billing Alerts</h2>
+      <p>This ensures you get notified before you&rsquo;re actually charged anything.</p>
+      <ol>
+        <li>From the billing screen, click <strong>Budgets &amp; alerts</strong>.</li>
+      </ol>
+      <img src="../assets/google_api/budgets_and_alerts.png" alt="Budgets and alerts menu" class="img-xs">
+
+      <ol start="2">
+        <li>Click <strong>CREATE BUDGET</strong>.</li>
+      </ol>
+      <img src="../assets/google_api/create_budget.png" alt="Create budget button" class="img-sm">
+
+      <ol start="3">
+        <li>Give it a name like <em>&ldquo;DQX Translation Costs&rdquo;</em>.</li>
+        <li>Leave all services selected and discounts/promotions checked, then click <strong>NEXT</strong>.</li>
+      </ol>
+      <img src="../assets/google_api/alert_scope.png" alt="Alert scope settings" class="img-sm">
+
+      <ol start="5">
+        <li>Set the budget amount to <strong>$10.00 USD</strong> (or local equivalent).</li>
+      </ol>
+
+      <div class="callout callout--info">
+        <div class="callout__title">ℹ Why $10?</div>
+        <p>
+          Google provides a $10 monthly credit against the Translation API, applied at the end of the billing cycle.
+          You&rsquo;ll see a bill for usage, then the credit offsets it - up to $10. Set your alert at $10 so you know
+          when you&rsquo;re about to exceed the free tier.
+        </p>
+      </div>
+      <img src="../assets/google_api/alert_amount.png" alt="Alert amount - $10" class="img-sm">
+
+      <ol start="6">
+        <li>Set your thresholds (e.g. 50%, 90%, 100%) so you get warned before you&rsquo;re charged.</li>
+      </ol>
+      <img src="../assets/google_api/alert_actions.png" alt="Alert threshold actions" class="img-sm">
+
+      <ol start="7">
+        <li>Keep <strong>Email alerts to billing admins and users</strong> checked, then click <strong>FINISH</strong>.</li>
+      </ol>
+      <img src="../assets/google_api/alert_notifications.png" alt="Alert notifications" class="img-sm">
+
+      <!-- Enable API -->
+      <h2 id="enable">Enable the Translation API</h2>
+      <ol>
+        <li>Type <strong>translate</strong> in the search bar again and click <strong>Cloud Translation API</strong>.</li>
+      </ol>
+      <img src="../assets/google_api/search_translate.png" alt="Search for Cloud Translation API" class="img-sm">
+
+      <ol start="2">
+        <li>Click <strong>ENABLE</strong>.</li>
+      </ol>
+      <img src="../assets/google_api/cloud_translation_api_image.png" alt="Enable Cloud Translation API" class="img-sm">
+
+      <ol start="3">
+        <li>Click <strong>ENABLE BILLING</strong> and select the billing account you just created.</li>
+      </ol>
+      <img src="../assets/google_api/billing_required.png" alt="Enable billing" class="img-sm">
+      <img src="../assets/google_api/select_your_billing_account.png" alt="Select your billing account" class="img-sm">
+
+      <ol start="4">
+        <li>Click <strong>SET ACCOUNT</strong>.</li>
+      </ol>
+
+      <!-- Credential -->
+      <h2 id="credential">Create Your API Credential</h2>
+      <ol>
+        <li>Click the hamburger menu (top left) → <strong>APIs and Services</strong> → <strong>Credentials</strong>.</li>
+      </ol>
+      <img src="../assets/google_api/create_credential.png" alt="Navigate to Credentials" class="img-sm">
+
+      <ol start="2">
+        <li>Click <strong>CREATE CREDENTIALS</strong> at the top, then click <strong>API Key</strong>.</li>
+      </ol>
+      <img src="../assets/google_api/create_api_key.png" alt="Create API Key" class="img-sm">
+
+      <ol start="3">
+        <li>Copy this API key and save it somewhere safe. It&rsquo;s essentially your password. Then click <strong>Restrict Key</strong> in the bottom right.</li>
+      </ol>
+      <img src="../assets/google_api/api_key_created.png" alt="API key created dialog" class="img-sm">
+
+      <ol start="4">
+        <li>Give the key a meaningful name. Under <strong>API restrictions</strong>, click <strong>Restrict key</strong>, type <strong>translation</strong> in the filter, and select <strong>Cloud Translation API</strong>. Click <strong>SAVE</strong>.</li>
+      </ol>
+      <img src="../assets/google_api/credential_restrictions.png" alt="API key restrictions" class="img-sm">
+
+      <div class="callout callout--success">
+        <div class="callout__title">✓ You&rsquo;re all set</div>
+        <p>
+          Enter the API key you copied into <a href="../dqxclarity.html">dqxclarity</a> under the Google API section and you&rsquo;re good to go.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <div class="footer__logo">DQX <span>Translation Project</span></div>
+        <p class="footer__desc">Tools built to play Dragon Quest X Online in English.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Docs</h4>
+        <ul>
+          <li><a href="../dqxclarity.html">dqxclarity</a></li>
+          <li><a href="../troubleshooting.html">Troubleshooting</a></li>
+          <li><a href="../faq.html">FAQ</a></li>
+          <li><a href="deepl.html">DeepL API</a></li>
+          <li><a href="google.html">Google Translate API</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="https://github.com/dqx-translation-project/dqxclarity" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://discord.gg/dragonquestx" target="_blank" rel="noopener">Discord</a></li>
+          <li><a href="https://ko-fi.com/serany" target="_blank" rel="noopener">Ko-fi (serany)</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__copy">maintained by serany - not affiliated with Square Enix</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

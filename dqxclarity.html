@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dqxclarity - DQX Translation Project</title>
+  <meta name="description" content="How to download, install, and configure dqxclarity for live English translation of Dragon Quest X.">
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <noscript><style>.reveal { opacity: 1; transform: none; }</style></noscript>
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav container" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav__logo">DQX <span>Translation Project</span></a>
+    <div class="nav__links">
+      <a href="index.html">Home</a>
+      <a href="dqxclarity.html">dqxclarity</a>
+      <a href="faq.html">FAQ</a>
+      <a href="troubleshooting.html">Troubleshooting</a>
+    </div>
+    <div class="nav__actions">
+      <a href="https://github.com/dqx-translation-project/dqxclarity" class="btn btn--ghost btn--sm" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://discord.gg/dragonquestx" class="btn btn--primary btn--sm" target="_blank" rel="noopener">Discord</a>
+    </div>
+    <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<div class="page-hero">
+  <div class="container">
+    <a href="index.html" class="breadcrumb">Home</a>
+    <h1>dqxclarity</h1>
+    <p>Perform live translation of Dragon Quest X&rsquo;s server-side text. Intercepts game text, translates it, and returns it back to the game.</p>
+  </div>
+</div>
+
+<div class="container">
+  <nav class="jump-nav" aria-label="Page sections">
+    <a href="#download">Download</a>
+    <a href="#requirements">Requirements</a>
+    <a href="#apis">Translation APIs</a>
+    <a href="#installation">Installation</a>
+    <a href="#configuration">Configuration</a>
+    <a href="#launching">Launching</a>
+    <a href="#uninstall">Uninstall</a>
+  </nav>
+</div>
+
+<div class="content-wrapper">
+  <div class="container">
+    <div class="content">
+
+      <!-- Download -->
+      <h2 id="download">Download</h2>
+      <p>
+        <a href="https://github.com/dqx-translation-project/dqxclarity/releases/latest/download/dqxclarity.zip"
+           class="btn btn--primary">⬇ Direct Download</a>
+      </p>
+
+      <!-- Requirements -->
+      <h2 id="requirements">Pre-requirements</h2>
+      <ul>
+        <li>Windows 11. dqxclarity is known <strong>not</strong> to work on Windows 7 and may or may not work on Windows 10.</li>
+        <li>(Recommended) A live translation API - see <a href="#apis">Translation APIs</a> below.</li>
+      </ul>
+
+      <div class="callout callout--warning">
+        <div class="callout__title">⚠ Important</div>
+        <p>
+          Dragon Quest X <strong>must be installed</strong> (and fully patched!) before performing these steps.
+          Using dqxclarity to patch the game prior to the normal patching process completing may corrupt your DQX install,
+          requiring a reinstall. dqxclarity downloads a modded DAT file and places it in your game directory.
+          If the game isn&rsquo;t fully patched, it may attempt to use this file and cause problems.
+        </p>
+      </div>
+
+      <!-- APIs -->
+      <h2 id="apis">Translation APIs</h2>
+      <p>dqxclarity supports several translation services. Paid APIs provide the best quality:</p>
+
+      <h3>Paid options</h3>
+      <div class="api-chips">
+        <a href="apis/deepl.html" class="api-chip api-chip--paid">DeepL</a>
+        <span class="api-chip api-chip--paid">ChatGPT / OpenAI</span>
+        <a href="apis/google.html" class="api-chip api-chip--paid">Google Translate</a>
+      </div>
+      <p>Setup guides are available for <a href="apis/deepl.html">DeepL</a> and <a href="apis/google.html">Google Translate</a>.</p>
+
+      <h3>Free options</h3>
+      <div class="api-chips">
+        <span class="api-chip api-chip--free">Google Translate (mobile API)</span>
+        <span class="api-chip api-chip--free">Google Translate PA</span>
+        <span class="api-chip api-chip--free">LibreTranslate</span>
+        <span class="api-chip api-chip--free">Ollama (self-hosted)</span>
+        <span class="api-chip api-chip--free">Yandex Translate</span>
+      </div>
+      <p>Free options have lower translation quality but require no credit card.</p>
+
+      <!-- Installation -->
+      <h2 id="installation">Installation</h2>
+      <ol>
+        <li>Download the latest zip using the <a href="#download">link above</a>.</li>
+        <li><strong>Extract</strong> <code>dqxclarity.zip</code> and place it somewhere to be run.</li>
+      </ol>
+
+      <div class="callout callout--warning">
+        <div class="callout__title">⚠ Do not extract to these locations</div>
+        <ul>
+          <li>Within <code>Program Files</code></li>
+          <li>Within a OneDrive directory</li>
+          <li>A path containing special characters (accents, umlauts, diacritics, etc.) - typically a username</li>
+        </ul>
+      </div>
+
+      <ol start="3">
+        <li>Inside the dqxclarity folder, right-click <code>DQXClarity.exe</code> and click <strong>Run as administrator</strong>.</li>
+        <li>If you don&rsquo;t have .NET 9 installed, dqxclarity will prompt you to install it. You can also install it <a href="https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-9.0.17-windows-x64-installer" target="_blank" rel="noopener">here</a>.</li>
+        <li>If you don&rsquo;t have the required Python version installed, you&rsquo;ll see this prompt:</li>
+      </ol>
+
+      <img src="assets/dqxclarity/python_prompt_new.png"
+           alt="Python install prompt in dqxclarity"
+           class="img-md">
+
+      <ol start="6">
+        <li>Click <strong>OK</strong>. Python will silently install in the background along with its dependencies.</li>
+        <li>Once complete, the main dqxclarity window opens:</li>
+      </ol>
+
+      <img src="assets/dqxclarity/gui_new.png"
+           alt="dqxclarity main window"
+           class="img-md">
+
+      <div class="callout callout--note">
+        <div class="callout__title">ℹ Note</div>
+        <p>dqxclarity is actively developed, so your window may not look exactly as shown.</p>
+      </div>
+
+      <!-- Configuration -->
+      <h2 id="configuration">Configuration</h2>
+      <p>
+        Each tab has a <strong>?</strong> button that explains what it does.
+        The most important thing is setting your <strong>DQX Folder Path</strong> correctly under the <strong>Game</strong> tab.
+      </p>
+      <p>Under the <strong>Installation Configuration</strong> tab:</p>
+
+      <img src="assets/dqxclarity/dqxclarity_game_tab.png"
+           alt="dqxclarity Game tab - Installation Configuration"
+           class="img-md">
+
+      <ul>
+        <li>Click <strong>Patch Game Files</strong> to install the translated local game files to your DQX directory.</li>
+        <li><strong>(Optional)</strong> Click <strong>Patch Config</strong> to install a translated <code>DQXConfig.exe</code> - the Dracky utility for controller and graphics settings.</li>
+        <li><strong>(Optional)</strong> Click <strong>Patch Launcher</strong> to install a translated <code>DQXLauncher.exe</code>.</li>
+      </ul>
+
+      <p>Under the <strong>Launch</strong> tab:</p>
+
+      <img src="assets/dqxclarity/dqxclarity_game_tab_launch.png"
+           alt="dqxclarity Launch tab"
+           class="img-md">
+
+      <p>
+        This screen lets you bypass the official launcher and launch directly into the game.
+        It supports saving credentials and handles OTP. Your credentials are verified with the official DQX servers
+        and saved locally in <code>user_settings.ini</code> inside the dqxclarity directory in <strong>plain text</strong>
+        - do not share this file.
+      </p>
+
+      <div class="callout callout--info">
+        <div class="callout__title">ℹ Tip</div>
+        <p>Launching via this tab is <strong>required</strong> if you want native copy/paste support in game. Easy Play accounts can also launch this way if you have an existing account.</p>
+      </div>
+
+      <!-- Launching -->
+      <h2 id="launching">Launching</h2>
+      <ol>
+        <li>Click <strong>Run</strong> in the bottom right corner.</li>
+        <li>Briefly read through the output. The last line should say:<br>
+          <code>Done! Keep this window open (minimize it) and have fun on your adventure!</code>
+        </li>
+      </ol>
+
+      <img src="assets/dqxclarity/launch_dqx_new.png"
+           alt="dqxclarity launch output window"
+           class="img-md">
+
+      <div class="callout callout--success">
+        <div class="callout__title">✓ Success</div>
+        <p>The window that opened must remain open for your entire gaming session. You can minimize it and start playing.</p>
+      </div>
+
+      <!-- Uninstall -->
+      <h2 id="uninstall">Uninstallation</h2>
+      <ul>
+        <li>Delete the dqxclarity folder from your computer. All installed components are contained within it.</li>
+        <li>Uninstall <code>Python 3.11.3 32-bit</code> from Control Panel.</li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <div class="footer__logo">DQX <span>Translation Project</span></div>
+        <p class="footer__desc">Tools built to play Dragon Quest X Online in English.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Docs</h4>
+        <ul>
+          <li><a href="dqxclarity.html">dqxclarity</a></li>
+          <li><a href="troubleshooting.html">Troubleshooting</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="apis/deepl.html">DeepL API</a></li>
+          <li><a href="apis/google.html">Google Translate API</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="https://github.com/dqx-translation-project/dqxclarity" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://discord.gg/dragonquestx" target="_blank" rel="noopener">Discord</a></li>
+          <li><a href="https://ko-fi.com/serany" target="_blank" rel="noopener">Ko-fi (serany)</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__copy">maintained by serany - not affiliated with Square Enix</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
