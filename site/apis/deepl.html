@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeepL API Setup - DQX Translation Project</title>
+  <meta name="description" content="How to set up a DeepL API key to use with dqxclarity for live Dragon Quest X translation.">
+  <link rel="icon" href="../assets/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <noscript><style>.reveal { opacity: 1; transform: none; }</style></noscript>
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav container" role="navigation" aria-label="Main navigation">
+    <a href="../index.html" class="nav__logo">DQX <span>Translation Project</span></a>
+    <div class="nav__links">
+      <a href="../index.html">Home</a>
+      <a href="../dqxclarity.html">dqxclarity</a>
+      <a href="../faq.html">FAQ</a>
+      <a href="../troubleshooting.html">Troubleshooting</a>
+    </div>
+    <div class="nav__actions">
+      <a href="https://github.com/dqx-translation-project/dqxclarity" class="btn btn--ghost btn--sm" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://discord.gg/dragonquestx" class="btn btn--primary btn--sm" target="_blank" rel="noopener">Discord</a>
+    </div>
+    <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<div class="page-hero">
+  <div class="container">
+    <a href="../dqxclarity.html" class="breadcrumb">dqxclarity</a>
+    <h1>DeepL API Setup</h1>
+    <p>Get a DeepL API key to use with dqxclarity for live translation of server-side game text.</p>
+  </div>
+</div>
+
+<div class="container">
+  <nav class="jump-nav" aria-label="Page sections">
+    <a href="#requirements">Requirements</a>
+    <a href="#account">Creating an Account</a>
+    <a href="#limits">Character Limits</a>
+  </nav>
+</div>
+
+<div class="content-wrapper">
+  <div class="container">
+    <div class="content">
+
+      <div class="callout callout--warning">
+        <div class="callout__title">⚠ Policy Change</div>
+        <p>
+          DeepL recently changed their
+          <a href="https://support.deepl.com/hc/en-us/articles/360021200939-DeepL-API-plans" target="_blank" rel="noopener">API developer policy</a>
+          so they no longer reset characters monthly. Once you&rsquo;ve used 1,000,000 characters in total,
+          your account has reached its lifetime cap and you must upgrade to a Growth account.
+        </p>
+      </div>
+
+      <h2 id="requirements">Requirements</h2>
+      <ul>
+        <li>A valid debit or credit card</li>
+      </ul>
+
+      <div class="callout callout--warning">
+        <div class="callout__title">⚠ Supported Countries</div>
+        <p>
+          Check DeepL&rsquo;s <a href="https://support.deepl.com/hc/en-us/articles/360020016339-Countries-where-DeepL-paid-plans-are-available" target="_blank" rel="noopener">supported countries page</a>
+          to verify your billing country is supported. If it&rsquo;s not on the list, you&rsquo;ll receive errors during sign-up.
+          <a href="google.html">Google Translate API</a> is an alternative in that case.
+        </p>
+      </div>
+
+      <h2 id="account">Creating an Account</h2>
+      <ol>
+        <li>Visit the <a href="https://www.deepl.com/en/pro#api" target="_blank" rel="noopener">DeepL API registration page</a> and click <strong>Sign up for free</strong> under the <strong>Developer</strong> card on the left.</li>
+        <li>Register for an account. The process is straightforward and doesn&rsquo;t require screenshots.</li>
+        <li>Once registered and logged in, navigate to your <strong>Account</strong> tab and scroll to <strong>Authentication Key for DeepL API</strong>.</li>
+        <li>Copy this key - it&rsquo;s what you&rsquo;ll enter into <a href="../dqxclarity.html">dqxclarity</a> under the DeepL API section.</li>
+      </ol>
+
+      <h2 id="limits">Character Limits</h2>
+      <p>
+        Your DeepL Developer account allows translating up to <strong>500,000 characters per month</strong>
+        (up to a lifetime cap of <strong>1,000,000 characters total</strong>).
+        Once the monthly limit is reached, your key stops working until the next calendar month.
+        Once the lifetime cap is reached, you&rsquo;ll need to upgrade to a Growth account to continue.
+      </p>
+
+      <div class="callout callout--info">
+        <div class="callout__title">ℹ Note</div>
+        <p>
+          500,000 characters is a lot of text. Unless you&rsquo;re playing 10+ hours a day doing exclusively story content,
+          it will take a very long time to hit this limit.
+        </p>
+      </div>
+
+      <div class="callout callout--success">
+        <div class="callout__title">✓ You&rsquo;re set</div>
+        <p>
+          Enter the API key from your DeepL account page into dqxclarity under the DeepL API section and you&rsquo;re good to go.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <div class="footer__logo">DQX <span>Translation Project</span></div>
+        <p class="footer__desc">Tools built to play Dragon Quest X Online in English.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Docs</h4>
+        <ul>
+          <li><a href="../dqxclarity.html">dqxclarity</a></li>
+          <li><a href="../troubleshooting.html">Troubleshooting</a></li>
+          <li><a href="../faq.html">FAQ</a></li>
+          <li><a href="deepl.html">DeepL API</a></li>
+          <li><a href="google.html">Google Translate API</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="https://github.com/dqx-translation-project/dqxclarity" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://discord.gg/dragonquestx" target="_blank" rel="noopener">Discord</a></li>
+          <li><a href="https://ko-fi.com/serany" target="_blank" rel="noopener">Ko-fi (serany)</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__copy">maintained by serany - not affiliated with Square Enix</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

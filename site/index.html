@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DQX Translation Project</title>
+  <meta name="description" content="Play Dragon Quest X Online in English. Community-built tools to translate the game's menus, story, and server-side text.">
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <noscript><style>.reveal { opacity: 1; transform: none; }</style></noscript>
+</head>
+<body>
+
+<!-- ===== Header ============================================================ -->
+<header class="site-header">
+  <nav class="nav container" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav__logo">DQX <span>Translation Project</span></a>
+    <div class="nav__links">
+      <a href="index.html">Home</a>
+      <a href="dqxclarity.html">dqxclarity</a>
+      <a href="faq.html">FAQ</a>
+      <a href="troubleshooting.html">Troubleshooting</a>
+    </div>
+    <div class="nav__actions">
+      <a href="https://github.com/dqx-translation-project/dqxclarity" class="btn btn--ghost btn--sm" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://discord.gg/dragonquestx" class="btn btn--primary btn--sm" target="_blank" rel="noopener">Discord</a>
+    </div>
+    <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<!-- ===== Hero ============================================================== -->
+<section class="hero">
+  <div class="container">
+    <h1 class="hero__title">
+      Play Dragon Quest X<br>
+      <span class="accent">in English</span>
+    </h1>
+    <p class="hero__subtitle">
+      Our small team maintains an English translation experience for Dragon Quest X.
+    </p>
+    <div class="hero__actions">
+      <a href="https://github.com/dqx-translation-project/dqxclarity/releases/latest/download/dqxclarity.zip"
+         class="btn btn--primary btn--lg">
+        ⬇ Download dqxclarity
+      </a>
+      <a href="dqxclarity.html" class="btn btn--ghost btn--lg">Install Guide →</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== Features ========================================================== -->
+<section class="features">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Features</span>
+    </div>
+    <div class="card-grid">
+
+      <div class="card reveal">
+        <h3>Live Translation</h3>
+        <p>Server-side game text is intercepted and translated on-the-fly using a supported translation API.</p>
+      </div>
+
+      <div class="card reveal">
+        <h3>Translated Menus &amp; UI</h3>
+        <p>Patched game files give you English menus, item names, spell names, skills, monster names, etc.</p>
+      </div>
+
+      <div class="card reveal">
+        <h3>Hand-Translated Story</h3>
+        <p>The full main story (cutscenes) has been hand-translated. Gaidens and side quests may contain machine translation until they have been re-written.</p>
+      </div>
+
+      <div class="card reveal">
+        <h3>Multiple API Options</h3>
+        <p>Supports DeepL, Google Translate, ChatGPT/OpenAI, LibreTranslate, Ollama, Yandex, and more.</p>
+      </div>
+
+      <div class="card reveal">
+        <h3>Active Community</h3>
+        <p>Thousands of players hang out in the DQX Worldwide Discord. Get help and find other English speakers to play with.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== Quick links ======================================================= -->
+<section class="quick-links">
+  <div class="container" style="padding-top: clamp(2.5rem, 5vw, 4rem);">
+    <div class="section-header">
+      <span class="section-label">Get started</span>
+    </div>
+    <div class="link-cards">
+
+      <a href="dqxclarity.html" class="link-card reveal">
+        <h3>dqxclarity</h3>
+        <p>Download and install the translation tool. Step-by-step guide with screenshots.</p>
+      </a>
+
+      <a href="faq.html" class="link-card reveal">
+        <h3>FAQ</h3>
+        <p>Answers to common questions about installation, VPNs, translation limits, and more.</p>
+      </a>
+
+      <a href="troubleshooting.html" class="link-card reveal">
+        <h3>Troubleshooting</h3>
+        <p>Antivirus flagging the app? Menus still in Japanese? Find fixes here.</p>
+      </a>
+
+      <a href="apis/deepl.html" class="link-card reveal">
+        <h3>API Setup</h3>
+        <p>Guides for setting up DeepL and Google Translate API keys for live translation.</p>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ============================================================ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <div class="footer__logo">DQX <span>Translation Project</span></div>
+        <p class="footer__desc">Tools built to play Dragon Quest X Online in English.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Docs</h4>
+        <ul>
+          <li><a href="dqxclarity.html">dqxclarity</a></li>
+          <li><a href="troubleshooting.html">Troubleshooting</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="apis/deepl.html">DeepL API</a></li>
+          <li><a href="apis/google.html">Google Translate API</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="https://github.com/dqx-translation-project/dqxclarity" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://discord.gg/dragonquestx" target="_blank" rel="noopener">Discord</a></li>
+          <li><a href="https://ko-fi.com/serany" target="_blank" rel="noopener">Ko-fi (serany)</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__copy">maintained by serany - not affiliated with Square Enix</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ - DQX Translation Project</title>
+  <meta name="description" content="Frequently asked questions about playing Dragon Quest X Online in English - VPNs, installation, translation limits, dqxclarity, and more.">
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <noscript><style>.reveal { opacity: 1; transform: none; }</style></noscript>
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav container" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav__logo">DQX <span>Translation Project</span></a>
+    <div class="nav__links">
+      <a href="index.html">Home</a>
+      <a href="dqxclarity.html">dqxclarity</a>
+      <a href="faq.html">FAQ</a>
+      <a href="troubleshooting.html">Troubleshooting</a>
+    </div>
+    <div class="nav__actions">
+      <a href="https://github.com/dqx-translation-project/dqxclarity" class="btn btn--ghost btn--sm" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://discord.gg/dragonquestx" class="btn btn--primary btn--sm" target="_blank" rel="noopener">Discord</a>
+    </div>
+    <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<div class="page-hero">
+  <div class="container">
+    <a href="index.html" class="breadcrumb">Home</a>
+    <h1>FAQ</h1>
+    <p>Frequently asked questions about installation, VPNs, translation, and dqxclarity.</p>
+  </div>
+</div>
+
+<div class="container">
+  <nav class="jump-nav" aria-label="FAQ sections">
+    <a href="#installation">Installation</a>
+    <a href="#general">General DQX</a>
+    <a href="#tooling">Tooling</a>
+  </nav>
+</div>
+
+<div class="content-wrapper">
+  <div class="container">
+    <div class="content">
+
+      <!-- Installation -->
+      <div class="faq-group">
+        <h2 id="installation">Installation</h2>
+
+        <div class="accordion-item reveal">
+          <button class="accordion-trigger">
+            I copied my game from one drive to another and now it doesn&rsquo;t work
+            <i class="accordion-icon">▾</i>
+          </button>
+          <div class="accordion-body">
+            <p>Things you can try:</p>
+            <ul>
+              <li>Make sure the shortcut you&rsquo;re using to launch the game is updated to the new path. Generate a new shortcut or update the old one.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="accordion-item reveal">
+          <button class="accordion-trigger">
+            Do I need my VPN to be running all the time?
+            <i class="accordion-icon">▾</i>
+          </button>
+          <div class="accordion-body">
+            <p>
+              If you&rsquo;re located outside of the US or Japan, your VPN must be enabled <strong>during play</strong>.
+              The exception is during patching/downloading the game - your VPN does not need to be on during those times.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion-item reveal">
+          <button class="accordion-trigger">
+            Why is the DQX download so slow?
+            <i class="accordion-icon">▾</i>
+          </button>
+          <div class="accordion-body">
+            <p>
+              DQX&rsquo;s servers are hosted in Tokyo, Japan, so you&rsquo;ll experience some slowness due to physical distance.
+              The launcher no longer throttles download speeds, but distance-related slowness is expected.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion-item reveal">
+          <button class="accordion-trigger">
+            How do I install the rest of the versions (expansions)?
+            <i class="accordion-icon">▾</i>
+          </button>
+          <div class="accordion-body">
+            <p>
+              When purchasing expansions physically, the game ships with a DVD-ROM containing the installers.
+              When purchasing digitally, the third party you bought from should provide a download link.
+            </p>
+            <p>
+              If you can&rsquo;t obtain the expansions, join the
+              <a href="https://discord.gg/dragonquestx" target="_blank" rel="noopener">Dragon Quest X Worldwide Discord</a>
+              and type <code>!installer</code> in any channel to get access to a community-shared mediafire link with the expansion installers.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion-item reveal">
+          <button class="accordion-trigger">
+            I keep receiving an error while patching the game
+            <i class="accordion-icon">▾</i>
+          </button>
+          <div class="accordion-body">
+            <p>
+              Generally this is a connection issue. If the download is interrupted, you don&rsquo;t need to re-download the entire game.
+              The patcher will pick up where it left off (starting at 0% but with a smaller differential).
+              Keep restarting the patcher until it completes.
+            </p>
+            <p>
+              If there&rsquo;s a specific error message, check the remaining FAQs, Google the error code,
+              or ask in the <a href="https://discord.gg/dragonquestx" target="_blank" rel="noopener">Discord</a> for help.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion-item reveal">
+          <button class="accordion-trigger">
+            Does dqxclarity work on the Steam Deck or Linux?
+            <i class="accordion-icon">▾</i>
+          </button>
+          <div class="accordion-body">
+            <p>
+              Both DQX and dqxclarity can run on Steam Deck/Linux, but <strong>no official support is provided</strong>.
+              The developer has chosen not to chase the many WINE issues involved.
+              Join the "DQX on Steam Deck/Linux/WINE" thread in the
+              <a href="https://discord.gg/dragonquestx" target="_blank" rel="noopener">Discord</a> for community help.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion-item reveal">
+          <button class="accordion-trigger">
+            What VPNs are recommended to play?
+            <i class="accordion-icon">▾</i>
+          </button>
+          <div class="accordion-body">
+            <p>Free VPNs people have used successfully:</p>
+            <ul>
+              <li><a href="https://protonvpn.com/" target="_blank" rel="noopener">ProtonVPN</a></li>
+              <li><a href="https://www.softether.org/" target="_blank" rel="noopener">Softether</a></li>
+            </ul>
+            <p>Paid VPNs for better stability:</p>
+            <ul>
+              <li><a href="https://mudfish.net/" target="_blank" rel="noopener">Mudfish</a></li>
+              <li><a href="https://mullvad.net/" target="_blank" rel="noopener">Mullvad</a></li>
+              <li><a href="https://www.expressvpn.com/" target="_blank" rel="noopener">ExpressVPN</a></li>
+            </ul>
+            <p>When connecting, use a server in either the <strong>United States</strong> or <strong>Japan</strong> - these are the only two locations where DQX works without a VPN.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item reveal">
+          <button class="accordion-trigger">
+            Where is the default installation location for DQX?
+            <i class="accordion-icon">▾</i>
+          </button>
+          <div class="accordion-body">
+            <p><code>C:\Program Files (x86)\SquareEnix\DRAGON QUEST X</code></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- General DQX -->
+      <div class="faq-group">
+        <h2 id="general">General DQX</h2>
+
+        <div class="accordion-item reveal">
+          <button class="accordion-trigger">
+            Why does my account keep getting restricted, making me change my password?
+            <i class="accordion-icon">▾</i>
+          </button>
+          <div class="accordion-body">
+            <p>
+              There&rsquo;s a 99% chance you&rsquo;re using a VPN and the server location is inconsistent, causing DQX to flag your login as suspicious.
+            </p>
+            <p>
+              Fix: sign your DQX account up for multi-factor authentication (MFA / OTP).
+              <a href="https://dqxabbey.com/pages/resources/otp_guide.html" target="_blank" rel="noopener">dqxabbey has a guide</a> on how to set this up.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion-item reveal">
+          <button class="accordion-trigger">
+            Why do I see question marks (????) in the game&rsquo;s launcher?
+            <i class="accordion-icon">▾</i>
+          </button>
+          <div class="accordion-body">
+            <p>
+              DQX is trying to render Japanese characters, but your computer doesn&rsquo;t have the Japanese font installed.
+              The question marks are actually prompts like &ldquo;Do you want to exit?&rdquo; - unintelligible but not harmful.
+            </p>
+            <p>If you want to fix it:</p>
+            <ul>
+              <li>Install <a href="https://xupefei.github.io/Locale-Emulator/" target="_blank" rel="noopener">Locale Emulator</a> (discontinued but still works).</li>
+              <li>(Not recommended) Change your computer&rsquo;s region to Japanese in Windows settings.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="accordion-item reveal">
+          <button class="accordion-trigger">
+            Why do I get error EXCEPTION_ACCESS_VIOLATION in game?
+            <i class="accordion-icon">▾</i>
+          </button>
+          <div class="accordion-body">
+            <p>Several possible causes:</p>
+            <ul>
+              <li>Graphics driver is out of date</li>
+              <li>dqxclarity generated an error or wrote to incorrect memory</li>
+              <li>General game integrity issues (a reinstall may fix this)</li>
+            </ul>
+            <p>Try rebooting your computer to see if the error goes away.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item reveal">
+          <button class="accordion-trigger">
+            Why do I get error EINVAL [invalid argument]?
+            <i class="accordion-icon">▾</i>
+          </button>
+          <div class="accordion-body">
+            <p>
+              This is likely due to an old or corrupt dat mod. Click <strong>Patch Game Files</strong> in the Game tab
+              to download the latest dat mod files.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tooling -->
+      <div class="faq-group">
+        <h2 id="tooling">Tooling</h2>
+
+        <div class="accordion-item reveal">
+          <button class="accordion-trigger">
+            Why do I need to install Python?
+            <i class="accordion-icon">▾</i>
+          </button>
+          <div class="accordion-body">
+            <p>dqxclarity uses the Python programming language internally. It is required and will not work without it.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item reveal">
+          <button class="accordion-trigger">
+            Does dqxclarity work on the Switch?
+            <i class="accordion-icon">▾</i>
+          </button>
+          <div class="accordion-body">
+            <p>No. dqxclarity is strictly PC only.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item reveal">
+          <button class="accordion-trigger">
+            How much of the game is in English?
+            <i class="accordion-icon">▾</i>
+          </button>
+          <div class="accordion-body">
+            <p>As of January 2025:</p>
+            <ul>
+              <li>All files found in the game files are either hand-translated or machine-translated.</li>
+              <li>All of the <strong>main story</strong> has been hand-translated by various contributors.</li>
+              <li>Most <strong>gaidens</strong> (stories supporting the main story) are machine-translated.</li>
+              <li>All <strong>menus, spells, skills, items, housing, monster/NPC names</strong> have been hand-translated.</li>
+              <li>Server-side text is machine-translated on-the-fly as you encounter it in game.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="accordion-item reveal">
+          <button class="accordion-trigger">
+            Who is working on this project?
+            <i class="accordion-icon">▾</i>
+          </button>
+          <div class="accordion-body">
+            <p>The project contributors mainly consist of:</p>
+            <ul>
+              <li><strong>Serany</strong> - main developer</li>
+              <li><strong>Shobu</strong> - main translator</li>
+            </ul>
+            <p>Additional contributions come from various members of the DQX community on translation efforts.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item reveal">
+          <button class="accordion-trigger">
+            I don&rsquo;t have a credit card and can&rsquo;t use DeepL or Google Translate
+            <i class="accordion-icon">▾</i>
+          </button>
+          <div class="accordion-body">
+            <p>
+              dqxclarity has several free translation options built in. Translation quality isn&rsquo;t as good as a paid API,
+              but it&rsquo;s serviceable enough if you can&rsquo;t or don&rsquo;t want to sign up for a paid service.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion-item reveal">
+          <button class="accordion-trigger">
+            Can I get in trouble for using dqxclarity?
+            <i class="accordion-icon">▾</i>
+          </button>
+          <div class="accordion-body">
+            <p>
+              Short answer: probably not. What dqxclarity does is technically against the ToS, but many overseas players have used it
+              for years and we&rsquo;ve heard of no one receiving a ban or even a warning.
+              That doesn&rsquo;t mean it <em>can&rsquo;t</em> happen, so there&rsquo;s always an inherent (but likely very small) risk.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion-item reveal">
+          <button class="accordion-trigger">
+            Can Japanese players see that I&rsquo;m using dqxclarity?
+            <i class="accordion-icon">▾</i>
+          </button>
+          <div class="accordion-body">
+            <p>
+              Everything dqxclarity does is client-side - only you see it. However, there are <strong>2 specific instances</strong>
+              where others <em>can</em> tell:
+            </p>
+            <ul>
+              <li>Crafting a 3-star item</li>
+              <li>Catching a King-sized fish</li>
+            </ul>
+            <p>
+              Both of these broadcast a message to nearby players that will appear in English instead of Japanese.
+              It&rsquo;s not prohibited, but if you&rsquo;re paranoid, do these in secluded spots like your home or a My Town.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion-item reveal">
+          <button class="accordion-trigger">
+            Every time I talk to an NPC, my game freezes for a few seconds
+            <i class="accordion-icon">▾</i>
+          </button>
+          <div class="accordion-body">
+            <p>
+              This is expected behavior, not a bug. dqxclarity doesn&rsquo;t have access to server-side text in advance,
+              so it sends newly encountered text to a translation service (DeepL, Google, etc.) and waits for the response.
+              The pause is the round-trip time for that request. Length varies by API service.
+            </p>
+            <p>There isn&rsquo;t a fix - it&rsquo;s just something you get used to.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <div class="footer__logo">DQX <span>Translation Project</span></div>
+        <p class="footer__desc">Tools built to play Dragon Quest X Online in English.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Docs</h4>
+        <ul>
+          <li><a href="dqxclarity.html">dqxclarity</a></li>
+          <li><a href="troubleshooting.html">Troubleshooting</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="apis/deepl.html">DeepL API</a></li>
+          <li><a href="apis/google.html">Google Translate API</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="https://github.com/dqx-translation-project/dqxclarity" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://discord.gg/dragonquestx" target="_blank" rel="noopener">Discord</a></li>
+          <li><a href="https://ko-fi.com/serany" target="_blank" rel="noopener">Ko-fi (serany)</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__copy">maintained by serany - not affiliated with Square Enix</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
