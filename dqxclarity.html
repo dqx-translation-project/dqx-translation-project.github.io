@@ -117,17 +117,7 @@
 
       <ol start="3">
         <li>Inside the dqxclarity folder, right-click <code>DQXClarity.exe</code> and click <strong>Run as administrator</strong>.</li>
-        <li>If you don&rsquo;t have .NET 9 installed, dqxclarity will prompt you to install it. You can also install it <a href="https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-9.0.17-windows-x64-installer" target="_blank" rel="noopener">here</a>.</li>
-        <li>If you don&rsquo;t have the required Python version installed, you&rsquo;ll see this prompt:</li>
-      </ol>
-
-      <img src="assets/dqxclarity/python_prompt_new.png"
-           alt="Python install prompt in dqxclarity"
-           class="img-md">
-
-      <ol start="6">
-        <li>Click <strong>OK</strong>. Python will silently install in the background along with its dependencies.</li>
-        <li>Once complete, the main dqxclarity window opens:</li>
+		<li>The main dqxclarity window will open as shown below.</li>
       </ol>
 
       <img src="assets/dqxclarity/gui_new.png"
@@ -142,13 +132,25 @@
       <!-- Configuration -->
       <h2 id="configuration">Configuration</h2>
       <p>
-        Each tab has a <strong>?</strong> button that explains what it does.
-        The most important thing is setting your <strong>DQX Folder Path</strong> correctly under the <strong>Game</strong> tab.
+		There are various tabs with several sections in each.
+        Each section has a <strong>?</strong> button that explains what it does.
       </p>
-      <p>Under the <strong>Installation Configuration</strong> tab:</p>
+	  <p>The first tab you'll see is the <strong>General</strong> tab:</p>
+	  
+	  <img src="assets/dqxclarity/dqxclarity_general_tab.png"
+           alt="dqxclarity General tab"
+           class="img-md">
+	  <ul>
+		<li>For the best experience, leave all the checkboxes under "Configuration" checked.</li>
+		<li>For server-sided text to be translated, you must select an API under "API Settings".
+		If you set one up from the previous step, select it and set it up here. Otherwise, choose
+		one of the Free options.
+	  </ul>
+	  
+      <p>Next, you'll want to click the <strong>Game</strong> tab, then the <strong>Install Configuration</strong> tab:</p>
 
       <img src="assets/dqxclarity/dqxclarity_game_tab.png"
-           alt="dqxclarity Game tab - Installation Configuration"
+           alt="dqxclarity Game tab - Install Configuration"
            class="img-md">
 
       <ul>
@@ -168,7 +170,7 @@
         Click the <strong>Download</strong> button on this tab to download the English
         translation pack file. Your screen will then look like the above. As translations
         are often changing due to updates, it's recommended to keep
-        <strong>Automated Updates</strong> checked to always have
+        <strong>Automatic updates</strong> checked to always have
         the latest version of the translation files.
       </p>
 
@@ -212,7 +214,6 @@
       <h2 id="uninstall">Uninstallation</h2>
       <ul>
         <li>Delete the dqxclarity folder from your computer. All installed components are contained within it.</li>
-        <li>Uninstall <code>Python 3.11.3 32-bit</code> from Control Panel.</li>
       </ul>
 
     </div>
