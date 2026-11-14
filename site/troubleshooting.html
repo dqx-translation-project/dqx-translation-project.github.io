@@ -54,18 +54,18 @@
           <p>
             This is a <strong>false positive</strong> and can be safely ignored.
             dqxclarity is an unsigned executable that changes frequently - signing a certificate from a trusted authority
-            costs $70-$500 USD per year, which isn&rsquo;t worthwhile for a hobby project.
+            costs $70-$500 USD per year, which isn't worthwhile for a hobby project.
           </p>
           <p>
             You may need to add an exception in your antivirus software to mark the executable as OK.
-            It&rsquo;s recommended to add an exclusion for the entire <code>dqxclarity</code> folder.
+            It's recommended to add an exclusion for the entire <code>dqxclarity</code> folder.
           </p>
         </div>
       </div>
 
       <div class="accordion-item reveal">
         <button class="accordion-trigger">
-          I extracted the zip and dqxclarity.exe disappeared (or isn&rsquo;t there)
+          I extracted the zip and dqxclarity.exe disappeared (or isn't there)
           <i class="accordion-icon">&#9662;</i>
         </button>
         <div class="accordion-body">
@@ -80,15 +80,26 @@
 
       <div class="accordion-item reveal">
         <button class="accordion-trigger">
-          When I launch dqxclarity, the game dialog is translated but all the menus are still in Japanese
+          When I launch dqxclarity, everything is still in Japanese
           <i class="accordion-icon">&#9662;</i>
         </button>
         <div class="accordion-body">
           <p>
 			Make sure you have clicked <strong>Add DragonHook</strong> in the <strong>Installation Configuration</strong> tab, as well as
 			downloading the English language pack in the <strong>Language</strong> tab. This both enables loading of language packs as well
-			as supplying the dqxclarity team language pack - this is what translates in-game menus into English.
+			as supplying the dqxclarity team language pack - this is what translates in-game menus into English. In some rare situations, you
+			may also need to uncheck/recheck the English translation in the <strong>Language</strong> tab for it to stick.
           </p>
+		  <p>
+			If you've done all this and it still isn't working, here are some other things you can check/try:
+			<ul>
+				<li>If your DQX installation is located in the Program Files on your Windows drive, you may need to <a href="https://support.microsoft.com/en-us/windows/add-an-exclusion-to-windows-security-811816c0-4dfd-af4a-47e4-c301afe13b26"
+				   target="_blank" rel="noopener">Add an exclusion</a> in Windows Security (or whichever antivirus you use) to the install's <strong>Game</strong> folder.
+			  If this doesn't work, moving the install out of Program Files or onto another drive entirely may help.</li>
+				<li>Make sure you aren't using any Windows customizer programs like <strong>Windhawk</strong> - these can interfere with the file that loads the translations. If you are, then either don't use it while playing or find a way to exclude <code>DQXGame.exe</code> in the program.</li>
+				<li>Make sure that <code>DQXGame.exe</code> does not have "Disable fullscreen optimizations" enabled. (Properties > Compatability tab)</li>
+			</ul>
+		  </p>
         </div>
       </div>
 
